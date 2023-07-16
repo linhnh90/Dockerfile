@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jenkins:
+    image: "ubuntu-jenkins:latest"
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+    environment:
+      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
+      JENKINS_OPTS: --argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin

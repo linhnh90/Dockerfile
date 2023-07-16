@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <CheckBox
+        android:id="@+id/cb_attending"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:button="@drawable/bg_checkbox"
+        android:ellipsize="end"
+        android:fontFamily="@font/opensans_bold"
+        android:lines="1"
+        android:paddingStart="@dimen/dp_15"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_medium"
+        tools:text="@string/adjustment" />
+</LinearLayout>

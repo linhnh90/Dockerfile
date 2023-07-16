@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:paddingBottom="@dimen/dp_30">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:text="@string/add_participant"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_xxxlarge" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginHorizontal="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/bright_gray" />
+
+    <ImageView
+        android:id="@+id/iv_participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_alignStart="@+id/view_line"
+        android:layout_marginVertical="@dimen/dp_25"
+        android:layout_marginStart="@dimen/dp_60"
+        android:contentDescription="@null"
+        android:src="@drawable/img_single_participant" />
+
+    <TextView
+        android:id="@+id/tv_participant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_participant"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_toEndOf="@id/iv_participant"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_xnormal"
+        tools:text="Participant 1" />
+
+    <ScrollView
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_btn"
+        android:layout_below="@+id/tv_participant_name"
+        android:layout_alignStart="@id/view_line"
+        android:layout_alignEnd="@id/view_line"
+        android:fadeScrollbars="false"
+        android:paddingEnd="@dimen/dp_2"
+        android:scrollbarStyle="outsideInset"
+        android:layout_marginHorizontal="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Layout Left-->
+            <LinearLayout
+                android:id="@+id/layout_content_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+
+            </LinearLayout>
+
+            <!-- Layout Right-->
+            <LinearLayout
+                android:id="@+id/layout_content_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_70"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/view_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/ButtonWhiteSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_80"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/ButtonRedSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</RelativeLayout>

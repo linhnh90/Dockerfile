@@ -1,0 +1,11 @@
+FROM android-app:latest
+
+# WORKDIR /app
+USER styl
+COPY ./PA ./app
+RUN sudo chmod u+x ./app/gradlew 
+RUN cd ./app && sudo ./gradlew assembleRelease \
+    -Pandroid.injected.signing.store.file='sysKey/sys_key_pkcs12.jks' \
+    -Pandroid.injected.signing.store.password=styl@hcm \
+    -Pandroid.injected.signing.key.alias=styl \
+    -Pandroid.injected.signing.key.password=styl@hcm

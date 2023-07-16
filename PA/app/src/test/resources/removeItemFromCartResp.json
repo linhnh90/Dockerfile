@@ -1,0 +1,12 @@
+{
+  "bodyContent": {
+    "response": {
+      "CartId": "Online-31321ec1-fe08-42bf-a57b-2b0ead1d4e02",
+      "CartItemsCount": 0
+    },
+    "responseStatusCode": 0,
+    "hasError": false,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

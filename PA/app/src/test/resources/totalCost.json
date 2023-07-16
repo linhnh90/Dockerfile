@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "adjustmentAmount": 0,
+      "beforeDiscountAmount": 8,
+      "discountAmount": 0,
+      "promoDiscountAmount": 0,
+      "outletName": "Ace The Place CC",
+      "paymentAmount": 8,
+      "productCode": "AceThePlaceCC_TABLETENNISROOMTT2",
+      "productTitle": "TABLE TENNIS ROOM"
+    }
+  ],
+  "shoppingCartID": "Test",
+  "totalAdjustmentAmount": 0,
+  "totalBeforeDiscountAmount": 8,
+  "totalDiscountAmount": 0,
+  "totalGST": 0.52,
+  "totalPaymentAmount": 8,
+  "promoDiscountAmount": 0
+}

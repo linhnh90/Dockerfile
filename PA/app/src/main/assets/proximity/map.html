@@ -1,0 +1,382 @@
+<html>
+
+<head>
+    <title>OneMap2 XYZ (Default)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://cdn.onemap.sg/leaflet/onemap-leaflet.js"></script>
+    <style>
+		#map {
+			border: 2px solid #d4d4d4;
+			border-radius: 0px;
+		}
+
+		.custom .leaflet-popup-tip,
+		.custom .leaflet-popup-content-wrapper {
+			background: #ffffff;
+			color: #000000;
+			margin-left: 30px;
+			position: relative;
+			top: 180px;
+			overflow: hidden;
+			pointer-events: none;
+			border-radius: 8px;
+		}
+
+		.custom .leaflet-popup-tip-container {
+			visibility: hidden;
+		}
+
+		.first-line-title-format {
+			color: #c60d0d;
+			font-size: 25px;
+			font-family: OpenSansBold;
+		}
+
+		.second-line-title-format {
+			color: #000000;
+			font-size: 25px;
+			font-family: OpenSansBold;
+		}
+
+		.third-line-title-format {
+			color: #5f5f5f;
+			font-size: 25px;
+			font-family: OpenSansRegular;
+			white-space: pre;
+		}
+
+		@font-face {
+			font-family: "OpenSansBold";
+			src: url('file:///android_asset/font/opensans_bold.ttf');
+		}
+
+		@font-face {
+			font-family: "OpenSansRegular";
+			src: url('file:///android_asset/font/opensans_regular.ttf');
+		}
+	</style>
+</head>
+
+<body>
+<div id='map' style='height:750px;'></div>
+</body>
+<script>
+	var CURRENT_LOCATION = 'Your Start Location:';
+	var NO_PRODUCT = 'No';
+	var COURSES_LABEL = "listings found";
+	var COURSE_LABEL = "listing found";
+	var COURSE_FOUND_LABEL = "courses found";
+	var TWO_LINE_MARGIN_TOP = '180px';
+	var THREE_LINE_MARGIN_TOP = '215px';
+
+	var MIN_ZOOM_DEFAULT = 12;
+	var MAX_ZOOM_DEFAULT = 17;
+
+	var approximationMapRight = new Map([
+		[12, 0.014],
+		[13, 0.009],
+		[14, 0.0045],
+		[15, 0.0024],
+		[16, 0.0012],
+		[17, 0.0006],
+		[18, 0.0005],
+	]);
+
+	var approximationMapBottom = new Map([
+		[12, 0.024],
+		[13, 0.0118],
+		[14, 0.006],
+		[15, 0.0029],
+		[16, 0.0015],
+		[17, 0.0008],
+		[18, 0.0005],
+	]);
+
+	var approximationMapLeft = new Map([
+		[12, 0.0015],
+		[13, 0.001],
+		[14, 0.0009],
+		[15, 0.0004],
+		[16, 0.00015],
+		[17, 0.0001],
+		[18, 0.00005],
+	]);
+
+	var currentLocation;
+
+	L.Map = L.Map.extend({
+		openPopup: function (popup, latlng, options) {
+			if (!(popup instanceof L.Popup)) {
+				var content = popup;
+
+				popup = new L.Popup(options).setContent(content);
+			}
+
+			if (latlng) {
+				popup.setLatLng(latlng);
+			}
+
+			if (this.hasLayer(popup)) {
+				return this;
+			}
+
+			// NOTE THIS LINE : COMMENTING OUT THE CLOSEPOPUP CALL
+			//this.closePopup();
+			this._popup = popup;
+			return this.addLayer(popup);
+		}
+	});
+
+	var center = L.bounds([1.56073, 104.11475], [1.16, 103.502]).getCenter();
+	var map = L.map('map').setView([center.x, center.y], 12);
+	map.setMaxBounds([[1.56073, 104.11475], [1.16, 103.502]]);
+
+	map.on('click', markerOnClick);
+	map.on('zoomend', listenMapZoomEvent);
+
+	var baseMap = L.tileLayer('https://maps-{s}.onemap.sg/v3/Default/{z}/{x}/{y}.png', {
+		detectRetina: true,
+		maxZoom: MAX_ZOOM_DEFAULT,
+		minZoom: MIN_ZOOM_DEFAULT
+	});
+	baseMap.addTo(map);
+
+	var markerGroup = L.layerGroup().addTo(map);
+
+	var myIcon = L.icon({
+		iconUrl: 'ic_marker.png',
+		//iconSize: [38, 95],
+		//iconAnchor: [22, 94],
+		// popupAnchor: [-3, -76],
+		//shadowUrl: 'marker-icon.png',
+		//shadowSize: [68, 95],
+		//shadowAnchor: [22, 94]
+	});
+
+
+	// specify popup options
+	var customOptions = {
+		'closeButton': false,
+		'className': 'custom',
+		'autoClose': false,
+		'closeOnClick': false,
+		'maxWidth': '1500',
+		'tapTolerance': '100',
+	}
+
+	function deleteAllOfMarkers() {
+		markerGroup.clearLayers();
+	}
+
+	function setCurrentLocation(proximityLocationInfo) {
+		currentLocation = JSON.parse(proximityLocationInfo);
+	}
+
+	var zoom = 12;
+	var approximationRight = 0.015;
+	var approximationBottom = 0.025;
+	var approximationLeft = 0.0015;
+	function setZoomView(distance) {
+		var min = MIN_ZOOM_DEFAULT;
+		var max = MAX_ZOOM_DEFAULT;
+
+		if (distance == 1) {
+			min = MIN_ZOOM_DEFAULT;
+			max = MAX_ZOOM_DEFAULT;
+			zoom = 15;
+		} else if (distance == 3) {
+			min = MIN_ZOOM_DEFAULT;
+			max = MAX_ZOOM_DEFAULT;
+			zoom = 14;
+		} else if (distance == 5) {
+			min = MIN_ZOOM_DEFAULT;
+			max = MAX_ZOOM_DEFAULT;
+			zoom = 13;
+		}
+
+		map.setZoom(zoom, {
+			animate: true,
+		});
+
+		setApproximation();
+	}
+
+	function setApproximation() {
+		approximationRight = approximationMapRight.get(zoom);
+		approximationBottom = approximationMapBottom.get(zoom);
+		approximationLeft = approximationMapLeft.get(zoom);
+	}
+
+	function listenMapZoomEvent() {
+		zoom = map.getZoom();
+		setApproximation();
+	}
+
+	function markerOnClick(e) {
+		for (var i = 0; i < locationInfoList.length; i++) {
+
+			if (((locationInfoList[i].outlet.latitude - approximationBottom <= e.latlng.lat) &&
+				(locationInfoList[i].outlet.latitude >= e.latlng.lat))
+				&&
+				((locationInfoList[i].outlet.longitude - approximationLeft <= e.latlng.lng) &&
+					(locationInfoList[i].outlet.longitude + approximationRight >= e.latlng.lng))) {
+				AndroidInterface.setLocationInfo(JSON.stringify(locationInfoList[i]));
+				return
+			}
+		}
+	}
+
+	function showAllOfLocation(locationList) {
+		deleteAllOfMarkers();
+		showLocationList(locationList);
+	}
+
+	function showAllOfLocation(locationList, distance) {
+		deleteAllOfMarkers();
+		setZoomView(distance);
+		showLocationList(locationList);
+	}
+
+	var locationInfoList = [];
+	function showLocationList(locationList) {
+		var locations = JSON.parse(locationList);
+		locationInfoList = locations;
+
+		for (var i = 0; i < locations.length; i++) {
+			var secondLine = locations[i].outlet.friendlyName;
+
+			var productQuantities = NO_PRODUCT;
+			var endLabel = COURSES_LABEL;
+			if (locations[i].productQuantities != null && locations[i].productQuantities > 0) {
+				productQuantities = locations[i].productQuantities;
+				if (productQuantities == 1) {
+					endLabel = COURSE_LABEL;
+				}
+			} else {
+				endLabel = COURSE_FOUND_LABEL;
+			}
+
+			var thirdLine = productQuantities + " " + endLabel;
+
+			var customPopup = "";
+			var isCurrentLocation = false;
+
+			if (currentLocation != null && locations[i].outlet.outletId == currentLocation.outletId) {
+				customPopup = "<div class = 'first-line-title-format'>" + CURRENT_LOCATION + "</div>";
+				isCurrentLocation = true;
+			}
+
+			thirdLine = customThirdLine(secondLine, thirdLine, isCurrentLocation);
+
+			customPopup += "<div class = 'second-line-title-format'>" + secondLine + " </div>" +
+				"<div class = 'third-line-title-format'>" + thirdLine + "</div>";
+
+
+
+			var marker = new L.marker([locations[i].outlet.latitude, locations[i].outlet.longitude], {
+				icon: myIcon,
+				keyboard: false,
+				autoPan: true,
+				zIndexOffset: 500,
+				riseOnHover: true,
+				riseOffset: 700,
+			}).addTo(markerGroup)
+				.bindPopup(customPopup, customOptions).openPopup();
+
+			marker.on('click', markerOnClick, this);
+			marker.on('mouseover', markerOnClick, this);
+			marker.on('mousedown', markerOnClick, this);
+
+			// var marker1 = new L.circleMarker([locations[i].outlet.latitude, locations[i].outlet.longitude], {
+			// 	radius: 30,
+			// }).addTo(markerGroup)
+			// 	.bindPopup(customPopup, customOptions).openPopup();
+
+			// var marker2 = new L.circleMarker([locations[i].outlet.latitude, locations[i].outlet].longitude], {
+			// 	radius: 2,
+			// 	opacity: 1,
+			// 	weight: 5,
+			// }).addTo(markerGroup)
+			// 	.bindPopup(customPopup, customOptions).openPopup();
+		}
+
+		var cols = document.getElementsByClassName('leaflet-popup-content-wrapper');
+		for (i = 0; i < cols.length; i++) {
+			var currentElement = cols[i].getElementsByClassName('first-line-title-format');
+
+			if (currentElement != null && currentElement.length > 0 && currentElement[0].innerText === CURRENT_LOCATION) {
+				cols[i].style.top = THREE_LINE_MARGIN_TOP;
+				cols[i].style.background = "#ffffff";
+			} else {
+				cols[i].style.top = TWO_LINE_MARGIN_TOP;
+			}
+		}
+		setViewTimer();
+	}
+
+	function setViewTimer() {
+		var lat = 0.0;
+		var lng = 0.0;
+		if (currentLocation != null) {
+			for (var i = 0; i < locationInfoList.length; i++) {
+				if (locationInfoList[i].outlet.outletId == currentLocation.outletId) {
+					lat = locationInfoList[i].outlet.latitude;
+					lng = locationInfoList[i].outlet.longitude;
+				}
+			}
+		}
+
+		if (lat == 0.0 && lng == 0.0 && locationInfoList.length > 0) {
+			lat = locationInfoList[0].outlet.latitude;
+			lng = locationInfoList[0].outlet.longitude;
+		}
+
+		if (lat != 0.0 && lng != 0.0) {
+			var x = setInterval(function () {
+				map.setView([lat, lng], zoom);
+				clearInterval(x);
+			}, 500);
+		}
+	}
+
+	function customThirdLine(secondLine, thirdLine, isCurrentLocation) {
+		var maxLength = maxLine(secondLine.length, CURRENT_LOCATION.length, isCurrentLocation);
+
+		if (maxLength >= thirdLine.length) {
+			maxLength = 2 * maxLength;
+		} else {
+			maxLength = thirdLine.length + 10;
+		}
+
+
+		var thirdContent = thirdLine;
+		for (var i = 0; i < (maxLength - thirdLine.length); i++) {
+			thirdContent += " ";
+		}
+
+		return thirdContent;
+	}
+
+	function maxLine(secondLine, firstLine, isCurrentLocation) {
+		if (!isCurrentLocation || secondLine >= firstLine) {
+			return secondLine;
+		}
+
+		return firstLine;
+	}
+</script>
+
+<script>
+	//disable link
+	var elements = document.getElementsByClassName("leaflet-control-attribution leaflet-control")
+	for (var i = 0; i < elements.length; i++) {
+	    var x = elements[i].getElementsByTagName('a');
+	    for (var j = 0; j < x.length; j++) {
+	        if (x[j].innerHTML == "Singapore Land Authority") {
+                x[j].removeAttribute('href')
+	        }
+	    }
+	}
+</script>
+
+</html>

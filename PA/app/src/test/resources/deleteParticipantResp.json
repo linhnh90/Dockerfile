@@ -1,0 +1,17 @@
+{
+  "bodyContent": {
+    "response": {
+      "CartError": [],
+      "ErrorValidation": {
+        "Actions": [],
+        "HasError": false,
+        "Popup": false
+      },
+      "RedirectUrl": "/cart/summary"
+    },
+    "responseStatusCode": 0,
+    "hasError": false,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

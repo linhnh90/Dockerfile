@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_color"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:paddingVertical="@dimen/dp_20">
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_terminal_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_setting_radio_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:paddingVertical="@dimen/dp_10"
+            android:text="@string/terminal_setting"
+            android:textColor="@drawable/text_setting_radio_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <RadioButton
+            android:id="@+id/rb_receipt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_setting_radio_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingVertical="@dimen/dp_10"
+            android:text="@string/receipt_setting"
+            android:textColor="@drawable/text_setting_radio_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_setting_radio_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingVertical="@dimen/dp_10"
+            android:text="@string/receipt_setting"
+            android:textColor="@drawable/text_setting_radio_selector"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_setting_radio_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingVertical="@dimen/dp_10"
+            android:text="@string/receipt_setting"
+            android:textColor="@drawable/text_setting_radio_selector"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="invisible" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_setting_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_exit"
+        android:layout_below="@id/rg_options"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="@dimen/setting_exit_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:background="@drawable/bg_setting_radio_selected"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/exit_application"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/btn_close_setting"
+        android:layout_width="@dimen/setting_exit_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:background="@drawable/bg_setting_radio_selected"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/close_settings"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

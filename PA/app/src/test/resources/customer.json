@@ -1,0 +1,30 @@
+{
+  "areaOfInterest": [],
+  "blockno": "81",
+  "consentEmail": "false",
+  "consentMail": "false",
+  "consentPhone": "false",
+  "consentSMS": "false",
+  "customerId": "7dd4a1f3-af6f-422e-a053-ba3a721091c7",
+  "dob": "1991-12-12T00:00:00+00:00",
+  "email": "pham.duc.doan.trang@styl.solutions",
+  "fullName": "PHAM DUC DOAN TRANG",
+  "gender": "Male",
+  "idno": "C0709944",
+  "idtype": "Passport",
+  "lastAccessedDate": "08/12/2021 11:02:07",
+  "membershipCardList": [
+    {
+      "TFTPoints": "",
+      "cardCode": "PA60",
+      "expiryDate": "2025-07-31T23:59:59+00:00",
+      "membershipCardNo": "8160140000004625"
+    }
+  ],
+  "mobileno": "80000000",
+  "nationality": "VIETNAMESE",
+  "postalcode": "408830",
+  "preferredCommunityClub": "4070",
+  "race": "Chinese",
+  "streetname": "UBI AVENUE 4"
+}

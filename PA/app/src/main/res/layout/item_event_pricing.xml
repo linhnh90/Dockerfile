@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="top"
+    android:layout_marginBottom="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="@dimen/item_event_pricing_tv_amount_width"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/black_color_2"
+        tools:text="$10.00"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:textSize="@dimen/text_size_mini"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_ticket_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/black_color_2"
+            tools:text="Standard"
+            android:textSize="@dimen/text_size_mini"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black_color_2"
+            tools:text="Standard ticket with 200 attendee"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/text_size_mini"/>
+        <TextView
+            android:id="@+id/tv_endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black_color_2"
+            tools:text="Valid till 16 Feb 2023 5:00 PM"
+            android:textSize="@dimen/text_size_mini"/>
+    </LinearLayout>
+
+</LinearLayout>

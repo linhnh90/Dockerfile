@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_45"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_ticket_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@drawable/checkbox_declaration"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_25"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_xnormal"
+        tools:text="Standard - $10.00" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@drawable/bg_sort_left"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/minus"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_xxxlarge" />
+
+        <TextView
+            android:id="@+id/tv_selected_qty"
+            android:layout_width="100dp"
+            android:layout_height="53dp"
+            android:background="@drawable/bg_center_unselect"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_xsmall"
+            tools:text="1" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@drawable/bg_sort_right"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/plus"
+            android:textColor="@color/red_color_2"
+            android:textSize="@dimen/text_size_xxxlarge" />
+    </LinearLayout>
+
+</LinearLayout>

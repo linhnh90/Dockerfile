@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_container"
+    android:layout_width="@dimen/dp_425"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_13"
+    android:layout_marginEnd="@dimen/dp_13"
+    android:paddingBottom="15dp"
+    app:cardBackgroundColor="@color/white_color"
+    app:cardCornerRadius="@dimen/dp_20"
+    app:cardElevation="@dimen/dp_2"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_230"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:background="@color/purple_color"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingHorizontal="@dimen/dp_20"
+            android:paddingVertical="@dimen/dp_10"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large"
+            tools:text="$15" />
+
+        <LinearLayout
+            android:id="@+id/title_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/txt_class_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/opensans_bold"
+                android:lines="3"
+                android:maxLines="3"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_medium"
+                tools:text="Sweet Sensations For Children" />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/txt_vacancy"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textColor="@color/black_color"-->
+            <!--                    android:textSize="@dimen/text_size_normal"-->
+            <!--                    tools:text="12" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="Vacancy"-->
+            <!--                    android:textColor="@color/black_color"-->
+            <!--                    android:textSize="@dimen/text_size_small" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="@dimen/dp_65"-->
+            <!--                    android:layout_height="@dimen/dp_5"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_5"-->
+            <!--                    android:background="@color/purple_color" />-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_panel"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_20">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/opensans_regular"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    tools:text="24 NOV 2018 ~ 25 DEC " />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/opensans_regular"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    tools:text="201811.00 AM ~ 02.00" />
+
+                <TextView
+                    android:id="@+id/txt_branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/opensans_regular"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    tools:text="PMRADIN MAS CC" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_add_to_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_cart_round" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

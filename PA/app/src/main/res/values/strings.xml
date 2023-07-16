@@ -1,0 +1,944 @@
+<resources>
+    <string name="app_name">PA</string>
+
+    <string name="network_not_available">Network error.\nPlease approach our CC staff for further assistance.</string>
+    <string name="starting_kiosk">Kiosk is starting. Please wait…</string>
+    <string name="cannot_connect_server">No connection.\nPlease approach our CC staff for further assistance.</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="cepas">CEPAS</string>
+    <string name="credit_contactless">Credit Contactless</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="cup">CUP</string>
+    <string name="nets_debit">NETS Debit</string>
+    <string name="nets">NETS</string>
+    <string name="nets_flashpay">NETS FlashPay</string>
+    <string name="ezl_card">EZ-Link</string>
+    <string name="nfp_card">NETS NFP</string>
+    <string name="scheme_credit">Scheme Credit</string>
+    <string name="nets_debit_card">NETS EFT</string>
+
+    <string name="help">Help</string>
+    <string name="cart">Cart</string>
+
+    <string name="home_title">What\'s Happening at %s</string>
+    <string name="cart_title">My Cart</string>
+    <string name="particular_title">My Particulars</string>
+    <string name="payment_successful_title">Payment Successful</string>
+    <string name="cart_summary_title">Cart Summary</string>
+    <string name="payment_summary_title">Payment Summary</string>
+
+    <string name="view_all">View all at %s ></string>
+    <string name="find_your_next_experience">Find your next experience here</string>
+    <string name="courses">Courses</string>
+    <string name="facilities">Facilities</string>
+    <string name="events">Events</string>
+    <string name="find_courses">Find courses, eg. Cooking Class</string>
+    <string name="find_location">Find location</string>
+
+    <string name="refine_your_search">Refine your Search</string>
+    <string name="search_results">Search Results</string>
+    <string name="search_your_courses">Search your Courses</string>
+    <string name="search_your_events">Search your Events</string>
+    <string name="search_your_courses_hint">Enter keywords or code no.</string>
+    <string name="search_facilities_hint">eg. Badminton</string>
+    <string name="search_event_hint">Enter keywords or code no.</string>
+    <string name="search_ig_hint">Enter keywords or code no.</string>
+    <string name="advanced_search_event_hint">Enter keywords or event code number</string>
+    <string name="specify_location">Specify venue locations</string>
+    <string name="preferred_venue">Search preferred venue</string>
+    <string name="location">Locations</string>
+    <string name="near_by">Nearby</string>
+    <string name="specify_proximity">Sort nearby location</string>
+    <string name="distance">Select distance</string>
+    <string name="select_your_courses_category">Select your Courses Category</string>
+    <string name="choose_your_price_range">Choose your price range</string>
+    <string name="free">Free</string>
+    <string name="max_price">$300</string>
+    <string name="fee_from">from</string>
+    <string name="select_start_date">Select start date</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thurs">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="suitable_for">Suitable for</string>
+    <string name="search_by_keyword">Search by keyword</string>
+
+    <string name="time_title">Date</string>
+    <string name="date_and_time">Date &amp; Time</string>
+    <string name="class_schedule_title">Class Schedule</string>
+    <string name="schedule_title">Schedule</string>
+    <string name="session_title">No. of Sessions</string>
+    <string name="venue_title">Venue</string>
+    <string name="registration_close_date_title">Registration Close Date</string>
+    <string name="registration_closing_date">Registration Closing Date</string>
+    <string name="class_requirement_title">Class Requirements</string>
+    <string name="class_remarks_title">Remarks</string>
+    <string name="maximum_participants_title">Maximum Class Size</string>
+    <string name="maximum_event_size_title">Maximum Event Size</string>
+    <string name="add_to_card">Add to Cart</string>
+    <string name="book_now">Book Now</string>
+    <string name="register_now">Register Now</string>
+
+    <string name="remove_course">You can only register one item per session.\n Do you want to remove your previous item from your cart and replace with the new one?</string>
+    <string name="oops">Oops!</string>
+    <string name="items_up_to">You can only add up to %1$d items into cart.</string>
+
+    <string name="note">Note: Our kiosk can only accept one course registration each time for now</string>
+    <string name="price">Price</string>
+    <string name="total">Total (incl. GST)</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="description">Description</string>
+    <string name="stt">No.</string>
+
+    <string name="name_up">NAME</string>
+    <string name="ic">IC</string>
+    <string name="mobile_up">MOBILE</string>
+    <string name="email">EMAIL</string>
+    <string name="registering_the_course">Are you registering the course for yourself?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="scan_or_key_in">Scan or key in attendee\'s NRIC</string>
+    <string name="subtotal">Subtotal (incl. GST)</string>
+    <string name="nric">NRIC</string>
+    <string name="unit_number">Unit Number</string>
+    <string name="verify_success">Verification is Successful</string>
+    <string name="error">Error</string>
+    <string name="connect_scanner">Can\'t connect to scanner</string>
+    <string name="invalid_bardcode">Invalid Barcode</string>
+    <string name="invalid_qrcode">Invalid QR code</string>
+    <string name="invalid_token">Invalid token</string>
+    <string name="invalid_card">This card has not registered before</string>
+    <string name="cannot_scan">Scanner has not scan your barcode, scan again</string>
+    <string name="empty_nric">Please enter or scan the PAssionCard or NRIC</string>
+
+    <!--Promo-->
+    <string name="promo_code">Promo Code</string>
+    <string name="remove_promo">Remove</string>
+    <string name="appy_promo">Apply</string>
+    <string name="promo_hint">Input Promo Code</string>
+    <string name="see_all_available_promo_codes">See all available promo codes</string>
+    <string name="pls_input_promo_code">Please input promo code</string>
+    <string name="default_promo_error">This promo code is invalid or has expired</string>
+    <string name="promo_discount">Promo Code Disc</string>
+    <string name="remove_promo_error">Remove promo code error. Please try again!</string>
+    <string name="available_promo_codes">Select Available Promo Code</string>
+    <string name="promo_code_note">Please note the only one promo code may be applied</string>
+    <string name="no_promo_code_available">Sorry, there are no promo codes available at this moment</string>
+    <string name="read_t_and_c">Read T&amp;Cs</string>
+    <string name="term_and_condition">Term and Conditions apply</string>
+    <string name="valid_till">Valid Till: %s</string>
+    <string name="see_available_promo_codes">See available promo codes</string>
+    <string name="request_error">Sorry, we are unable to proceed with your request at the moment. Please try again later.\n(Status Code: %d)</string>
+
+    <string name="please_provide_email">Please provide us an email address to send your order confirmation.</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="email_invalid">The email address is invalid.</string>
+
+    <!-- Card Summary -->
+    <string name="not_exit">* Do not exit this page</string>
+    <string name="payer_name">Payer\'s Name: </string>
+    <string name="attendee">Attendee</string>
+    <string name="discounts">Discount ($)</string>
+    <string name="prices">Price ($)</string>
+
+    <string name="receipt_number">Receipt Number</string>
+    <string name="receive_receipt_question">Payment successful. Confirmation will be emailed to you shortly.\nDo you want a receipt?</string>
+    <string name="receive_receipt_question_free">Booking successful. Confirmation will be emailed to you shortly.\nDo you want a receipt?</string>
+    <string name="receive_receipt_question_free_ig">Regist successful. Confirmation will be emailed to you shortly.\nDo you want a receipt?</string>
+    <string name="receive_receipt_by_email">Receive E-receipt via email</string>
+    <string name="receive_receipt_by_email_hint">Type your email here</string>
+    <string name="print_receipt">Or, print receipt here.</string>
+
+    <string name="session_ending_soon">Session ending soon</string>
+    <string name="extend_session_question">Do you want to extend the session?</string>
+
+    <string name="scan_object">SCAN IC OR PASSION CARD</string>
+    <string name="scan_suggest">ANIMATION LOOPING SHOWING HOW TO IC OR PASSION CARD FOR PAYMENT</string>
+    <string name="result">Result: </string>
+    <string name="scan_again">Scan Again</string>
+
+    <string name="sessions_on">%d session(s) on %s (may be subject to changes)</string>
+    <string name="find_your_courses_here">Find your courses here</string>
+    <string name="find_your_events_here">Find your events here</string>
+    <string name="select_preferred_date_hint">dd/mm/yyyy</string>
+    <string name="select_locations">Select locations</string>
+    <string name="select_course_categories">Select course categories</string>
+    <string name="select_event_categories">Select event categories</string>
+    <string name="select_suitability">Suitable for</string>
+    <string name="select_preferred_day">Select preferred day</string>
+    <string name="multiple_selection_is_allowed">Multiple selection is allowed</string>
+    <string name="multiple_selection_is_allowed_mandatory">Multiple selection is allowed (Mandatory)</string>
+    <string name="mandatory">Mandatory</string>
+
+    <string name="wait_while_it_load">Please wait while it loads...</string>
+
+    <string name="choose_payment_method">Choose payment method</string>
+    <string name="ez_link_card">EZ-Link Cards</string>
+    <string name="debit_credit_cards">Debit/Credit Cards</string>
+
+    <string name="scan_qr_code">Place QR at Scanner</string>
+    <string name="scan_nric_card">Place NRIC/FIN at scanner</string>
+    <string name="tab_card">Please tap card on screen</string>
+    <string name="insert_card">Please insert card</string>
+    <string name="pls_enter_password">Please enter password</string>
+    <string name="password">Password</string>
+    <string name="listings">%d listings</string>
+
+    <string name="course_description">Course Description</string>
+    <string name="event_description">Event Description</string>
+    <string name="trainer_instructor">Trainer/Instructor</string>
+    <string name="prerequisite_course">Prerequisite Course</string>
+    <string name="no_prerequisite">No prerequisite course required</string>
+
+    <string name="select_a_date">Select a date</string>
+    <string name="select_a_date_hint">dd/mm/yyyy</string>
+    <string name="select_your_timeslot">Select your timeslot</string>
+    <string name="court1">Court 1</string>
+    <string name="court2">Court 2</string>
+    <string name="normal_rate_up">NORMAL RATE</string>
+    <string name="peak_rate_up">PEAK RATE</string>
+    <string name="legend">Legend</string>
+    <string name="not_available">Not Available</string>
+    <string name="normal">Normal</string>
+    <string name="normal_rate">Normal Rate</string>
+    <string name="booked">Booked</string>
+    <string name="peak_rate">Peak Rate</string>
+    <string name="fill_in_your_particulars_here">Fill in your particulars here. </string>
+    <string name="all_fields_are_mandatory"> All fields are mandatory</string>
+    <string name="booking_request_sent_to_cc">The booking request shall be sent to the CC for review and confirmation.</string>
+    <string name="name">Name *</string>
+    <string name="mobile">Contact Number *</string>
+    <string name="email_address">Email Address *</string>
+    <string name="purpose">Purpose of Booking *</string>
+    <string name="select_preferred_date_form">Select Preferred Date *</string>
+    <string name="select_preferred_time_form">Select Preferred Time *</string>
+    <string name="key_in_your_name_here">Key in your name here</string>
+    <string name="key_in_your_email_address_here">Key in your email address here</string>
+    <string name="key_in_your_mobile_number_here">Key in your mobile number here</string>
+    <string name="key_in_your_purpose_of_booking">Key in your purpose of booking</string>
+    <string name="company_name_if_any">Company name, if any</string>
+    <string name="roc_no_if_any">ROC no., if any</string>
+
+    <string name="cant_get_data">Can\'t get data from server</string>
+    <string name="discount">Total Discount</string>
+    <string name="delete_item_sure">Do you delete this item?</string>
+    <string name="remove_last_attendee">Removing Attendee will also remove item from cart. Proceed?</string>
+    <string name="remove_last_attendee_title">Registration required</string>
+    <string name="delete_all_item_sure">Do you delete all item?</string>
+    <string name="kiosk_activation">Kiosk Activation</string>
+    <string name="pls_enter_activation_code">Please enter activation code</string>
+    <string name="code">****</string>
+    <string name="submit">Submit</string>
+
+    <string name="before_discount_amount">beforeDiscountAmount</string>
+    <string name="adjust_discount_amount">discount+adjustment</string>
+    <string name="discount_amount">discountAmount</string>
+    <string name="adjustment_amount">adjustmentAmount</string>
+    <string name="total_amount">totalPayment + gst</string>
+
+    <string name="detail_amount_note">*Amount above indicates Public Fee. Additional fee and/or discount may be applied upon checkout.</string>
+    <string name="vacancy">Vacancy</string>
+
+    <!-- Payment error code -->
+    <string name="payment_unsuccessful">Payment unsuccessful</string>
+    <string name="pls_try_again">Please try again.</string>
+    <string name="pls_try_again_assistance"> Please try again or approach our CC staff for further assistance.</string>
+    <string name="common_error">Session Timeout. Please try again.</string>
+    <string name="cepas_51">51 - Read card error</string>
+    <string name="cepas_52">52 - Card Balance has no value (Balance = $0.00)</string>
+    <string name="cepas_53">53 - Invalid card</string>
+    <string name="cepas_54">54 - Card has insufficient</string>
+    <string name="cepas_55">55 - User cancel transaction (Card has been removed from reader)</string>
+    <string name="cepas_56">56 - Card reader time out when reading card</string>
+    <string name="cepas_57">57 - Card reader no ready</string>
+    <string name="cepas_58">58 - Terminal no ready</string>
+    <string name="credit_00">00 - Approved</string>
+    <string name="credit_01">01 - Refer to Card Issuer</string>
+    <string name="credit_02">02 - Refer to Issuer\'s special conditions</string>
+    <string name="credit_03">03 - Invalid Merchant</string>
+    <string name="credit_04">04 - Pick Up Card</string>
+    <string name="credit_05">05 - Do not honor</string>
+    <string name="credit_06">06 - Error</string>
+    <string name="credit_07">07 - Pick up card, Special conditions</string>
+    <string name="credit_08">08 - Honor with identification</string>
+    <string name="credit_09">09 - Request in Progress</string>
+    <string name="credit_10">10 - Partial Amount Approved</string>
+    <string name="credit_11">11 - VIP Approval</string>
+    <string name="credit_12">12 - Invalid transaction</string>
+    <string name="credit_13">13 - Invalid amount</string>
+    <string name="credit_14">14 - Invalid card number</string>
+    <string name="credit_15">15 - No such issuer</string>
+    <string name="credit_16">16 - Approved, update track 3</string>
+    <string name="credit_17">17 - Customer Cancellation</string>
+    <string name="credit_18">18- Customer dispute</string>
+    <string name="credit_19">19 - Re-enter transaction</string>
+    <string name="credit_20">20 - Invalid response</string>
+    <string name="credit_21">21 - No action taken (no match)</string>
+    <string name="credit_22">22 - Suspected Mulfuncttion</string>
+    <string name="credit_23">23 - Unacceptable Transaction Fee</string>
+    <string name="credit_24">24 - File Update not Supported by Receiver</string>
+    <string name="credit_25">25 - Unable to Locate Record on File</string>
+    <string name="credit_26">26 - Duplicate File Update Record</string>
+    <string name="credit_27">27 - File Update Field Edit Error</string>
+    <string name="credit_28">28 - File Update File Locked Out</string>
+    <string name="credit_29">29 - File Update not Successful</string>
+    <string name="credit_30">30 - Format Error</string>
+    <string name="credit_31">31 - Bank not Supported by Switch</string>
+    <string name="credit_32">32 - Completed Partially</string>
+    <string name="credit_33">33 - Expired Card - Pick up</string>
+    <string name="credit_34">34 - Suspected Fraud - Pick up</string>
+    <string name="credit_35">35 - Contact Acquirer - Pick up</string>
+    <string name="credit_36">36 - Restricted Card - Pick up</string>
+    <string name="credit_37">37 - Call Acquirer Security - Pick up</string>
+    <string name="credit_38">38 - Allowable PIN Tries Exceeded</string>
+    <string name="credit_39">39 - No Credit Account</string>
+    <string name="credit_40">40 - Requested Fnction not Supported</string>
+    <string name="credit_41">41 - Lost Card - Pick up</string>
+    <string name="credit_42">42 - No Universal Amount</string>
+    <string name="credit_43">43 - Stolen Card - Pick up</string>
+    <string name="credit_44">44 - No Investment Account</string>
+    <string name="credit_51">51 - Insufficient Funds</string>
+    <string name="credit_52">52 - No Cheque Account</string>
+    <string name="credit_53">53 - No Savings Account</string>
+    <string name="credit_54">54 - Expired Card</string>
+    <string name="credit_55">55 - Incorrect PIN</string>
+    <string name="credit_56">56 - No Card Record</string>
+    <string name="credit_57">57 - Trans. not Permitted to Cardholder</string>
+    <string name="credit_58">58 - Transaction not Permitted to Terminal</string>
+    <string name="credit_59">59 - Suspected Fraud</string>
+    <string name="credit_60">60 - Card Acceptor</string>
+    <string name="credit_61">61 - Exceeds Withdrawal Amount Limits</string>
+    <string name="credit_62">62 - Restricted Card</string>
+    <string name="credit_63">63 - Security Violation</string>
+    <string name="credit_64">64 - Original Amount Incorrect</string>
+    <string name="credit_65">65 - Exceeds Withdrawal Frequency Limit</string>
+    <string name="credit_66">66 - Card Acceptor Call Acquirer Security</string>
+    <string name="credit_67">67 - Hard Capture - Pick up Card at ATM</string>
+    <string name="credit_68">68 - Response Received Too Late</string>
+    <string name="credit_75">75 - Allowable PIN Tries Exceeded</string>
+    <string name="credit_77">77 - Data does not match original message</string>
+    <string name="credit_80">80 - Invalid Date</string>
+    <string name="credit_81">81 - Cryptographic failure</string>
+    <string name="credit_82">82 - Incorrect CVV</string>
+    <string name="credit_83">83 - Unable to verify PIN</string>
+    <string name="credit_84">84 - Invalid authorization life cycle</string>
+    <string name="credit_85">85 - No reason to decline</string>
+    <string name="credit_86">86 - ATM Malfunction</string>
+    <string name="credit_87">87 - No Envelope Inserted</string>
+    <string name="credit_88">88 - Unable to Dispense</string>
+    <string name="credit_89">89 - Administration Error</string>
+    <string name="credit_90">90 - Cut-off in Progress</string>
+    <string name="credit_91">91 - Issuer or Switch is Inoperative</string>
+    <string name="credit_92">92 - Financial Institution Not Found</string>
+    <string name="credit_93">93 - Transaction cannot be completed</string>
+    <string name="credit_94">94 - Duplicate Transmission</string>
+    <string name="credit_95">95 - Reconcile Error</string>
+    <string name="credit_96">96 - System Malfunction</string>
+    <string name="credit_97">97 - Reconciliation Totals Reset</string>
+    <string name="credit_98">98 - MAC Error</string>
+    <string name="credit_99">99 - Reserved for National use</string>
+    <string name="credit_N0">N0 - Force STIP (VISA)</string>
+    <string name="credit_N3">N3 - Cash Service Not Available (VISA)</string>
+    <string name="credit_N4">N4 - Cash request exceeds issuer limit (VISA)</string>
+    <string name="credit_N7">N7 - Decline for CVV2 failure (VISA)</string>
+    <string name="credit_P2">P2 - Invalid biller information (VISA)</string>
+    <string name="credit_P5">P5 - PIN Change Unblock Declined (VISA)</string>
+    <string name="credit_P6">P6 - Unsafe PIN (VISA)</string>
+    <string name="credit_XA">XA - Forward to issuer</string>
+    <string name="credit_XD">XD - Forward to issuer</string>
+
+    <!--print receipt-->
+    <string name="gst_reg_no">GST Reg No:</string>
+    <string name="reference">REFERENCE:</string>
+    <string name="print_date_time">Date/Time</string>
+    <string name="print_merchant_id">Merchant ID</string>
+    <string name="print_terminal_id">Terminal ID</string>
+    <string name="print_kiosk_id">Kiosk ID</string>
+    <string name="print_payer">Payer</string>
+    <string name="print_date">Date</string>
+    <string name="print_time">Time</string>
+    <string name="print_venue">Venue</string>
+    <string name="print_total_gst">Total (incl. GST)     </string>
+    <string name="print_total_discount">Total discount        </string>
+    <string name="print_total_promo">Promode Code (%s)     </string>
+    <string name="print_no_signature_required">NO SIGNATURE REQUIRED</string>
+    <string name="print_i_agree_to_pay">I AGREE TO PAY THE ABOVE TOTAL AMOUNT ACCORDING TO THE CARD ISSUER AGREEMENT</string>
+    <string name="print_payment_mode">Payment Mode</string>
+    <string name="print_card_name">Card Name</string>
+    <string name="print_card_no">Card No</string>
+    <string name="print_approval_code">Approval Code</string>
+    <string name="print_batch">Batch</string>
+    <string name="print_trace">Trace</string>
+    <string name="print_stan">STAN</string>
+    <string name="print_refunds_allowed">No refunds allowed except under certain circumstances. Please check at CC counter for details.</string>
+    <string name="transaction_id">Transaction Id</string>
+    <string name="ref_num">Ref Num</string>
+    <string name="tc">TC</string>
+    <string name="print_balance">CEPAS Bal</string>
+
+    <string name="select_location">Select location...</string>
+    <string name="select_session">Please, select session</string>
+
+    <string name="pls_enter_valid_email">Please enter your valid email</string>
+    <string name="e_receipt_subject">Confirmation of Payment for Order #%1$s</string>
+    <string name="e_receipt_content">Dear %1$s,&lt;br/&gt;Thank you for your payment.  A copy of the receipt can be found at the following link for your reference.&lt;br/&gt;For any questions, please call Radin Mas CC at 6273 5294 or email us at PA_radinmascc@pa.gov.sg . Thank you.</string>
+
+    <string name="enter_valid_name">Please enter valid name</string>
+    <string name="enter_valid_phone">Please enter valid phone</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="enter_valid_purpose">Please enter valid purpose</string>
+    <string name="preferred_date_invalid">Please select preferred date</string>
+    <string name="preferred_time_invalid">Please select start time</string>
+    <string name="distance_invalid">Please select distance</string>
+
+    <string name="facility_content">Name: %1$s\nEmail: %2$s\nMobile: %3$s\nPurpose: %4$s\nPreferred Date: %5$s\nPreferred Time: %6$s\nDistance: %7$s</string>
+    <string name="facility_subject">Submit facility form</string>
+
+    <string name="sent_email_success">A copy of the application request has also been emailed to you.\nOur staff will contact you further on your request.</string>
+
+    <string name="no_class">Not found any class</string>
+    <string name="courses_at">Courses at %s</string>
+    <string name="facilities_at">Facilities at %s</string>
+    <string name="interest_group_at">Interest Groups at %s</string>
+    <string name="events_at">Events at %s</string>
+    <string name="search_your_facilities">Search your Facilities</string>
+    <string name="search_your_interest_group">Search your Interest Groups</string>
+    <string name="help_content">Please proceed to counter for assistance</string>
+    <string name="organised_by">Organised by %s</string>
+    <string name="less_discount">less discount</string>
+    <string name="class_fee">Class fee (PAssion Member) - </string>
+    <string name="ig_fee">Ig fee (PAssion Member) - </string>
+    <string name="event_fee">Event fee (PAssion Member) - </string>
+    <string name="clear">Clear</string>
+    <string name="place_your_signatory">Please acknowledge to complete the payment transaction.</string>
+
+    <string name="rules_and_regulations">Rules and Regulations</string>
+    <string name="select_time">Please select</string>
+    <string name="rule_and_regulation">Rules and Regulations ></string>
+    <string name="rule_url_empty">No rules and regulations page found </string>
+
+    <string name="sorry">Sorry</string>
+    <string name="end_session">End session</string>
+    <string name="extend_session">I would like to extend session</string>
+    <string name="gst">GST</string>
+
+    <string-array name="distance_facilities">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>more than 4 hours</item>
+    </string-array>
+
+    <string-array name="suitability_list">
+        <item>Please select…</item>
+        <item>Senior Citizens</item>
+        <item>Children</item>
+        <item>Adults</item>
+        <item>Teens</item>
+    </string-array>
+
+    <string-array name="distance_list">
+        <item>1 km</item>
+        <item>3 km</item>
+        <item>5 km</item>
+    </string-array>
+
+    <string name="search_course_home_hint">Enter keywords or course code</string>
+    <string name="search_location_home_hint">Find a location, eg. Ang Mo Kio CC</string>
+    <string name="search_facility_home_hint">eg. Badminton Court</string>
+    <string name="search_location_hint">eg. Ang Mo Kio CC</string>
+    <string name="signature">SIGNATURE</string>
+    <string name="booking_fee">Booking fee (PAssion Member) -</string>
+    <string name="no_refund">No refunds allowed.\nPlease check with CC for more details.</string>
+    <string name="or">Or</string>
+    <string name="pr_receipt">Print Receipt</string>
+    <string name="your_cart_is_empty">Your cart is currently empty.</string>
+    <string name="return_to_shop">Return to shop</string>
+    <string name="verify_nric_before">Please verify nric</string>
+    <string name="adjustment">Adjustment</string>
+    <string name="unable_generate_receipt">Unable to retrieve receipt.\nPlease approach our CC staff for a printed copy if needed.</string>
+    <string name="na">N/A</string>
+    <string name="only_4_locations">Only 4 locations allowed</string>
+    <string name="singapore">Singapore</string>
+    <string name="web_pa">www.pa.gov.sg</string>
+    <string name="tel">Tel:</string>
+    <string name="fax">Fax:</string>
+
+    <string name="error_print_image">Error print image</string>
+    <string name="error_print_text">Error print text</string>
+    <string name="error_generate_font">Error generate font</string>
+    <string name="error_cut_paper">Error cut paper</string>
+    <string name="error_check_status_paper">Error check status paper</string>
+    <string name="error_check_status_with_code">Printer error: [%04XH - %04XH]</string>
+    <string name="error_paper_not_properly_inserted">Paper not properly inserted</string>
+    <string name="lost_connect_printer">Lost connection with printer</string>
+    <string name="cant_connect_printer">Can\'t connect to printer</string>
+
+    <string name="out_of_paper">Out of Paper</string>
+    <string name="e_invoice_will_be_sent">An e-invoice will be sent to your email if you have provided us your email address before.\nElse please approach counter for assistance</string>
+    <string name="problem_to_printer">Unable to print receipt. Please approach our CC staff for assistance.</string>
+    <string name="terminal_not_found">Terminal not found</string>
+    <string name="pls_proceed_counter_for_assistance">Please proceed to counter for assistance</string>
+    <string name="version">Version: %1$s</string>
+
+    <string name="please_refine_your_search">Please refine your search</string>
+    <string name="choose_locations">Choose your preferred locations</string>
+
+    <string name="non_member">Non-Member</string>
+    <string name="valid_for_members">Booking is only valid for members</string>
+    <string name="non_member_title">Non Member</string>
+    <string name="only_scan_passioncard_or_nric">Please scan PAssionCard or NRIC</string>
+    <string name="only_member_seletion">Currently, only member selection</string>
+    <string name="no_available_time_slot">No available time slot. Please choose again.</string>
+    <string name="select_time_slot">Please select a time slot before adding to cart</string>
+    <string name="booking_number_slot_error">Can only book 1 slot at a time. Please try again.</string>
+    <string name="mandatory_fields">All fields are mandatory</string>
+    <string name="complete_form">Please fill in mandatory fields *</string>
+    <string name="scan_qr_code_valid">Please scan valid QR code for class/event/ig</string>
+    <string name="scan_qr_code_valid_for_class">Please scan valid QR code for class</string>
+    <string name="class_not_found">Class not found</string>
+    <string name="scan_qr_code_valid_for_event">Please scan valid QR code for event</string>
+    <string name="scan_qr_code_valid_for_ig">Please scan valid QR code for ig</string>
+    <string name="event_not_found">Event not found</string>
+    <string name="ig_not_found">IG not found</string>
+    <string name="proceed_to_counter_for_assistance">Please proceed to counter for assistance</string>
+    <string name="verification_failed">Unable to verify the NRIC. Please try again.</string>
+    <string name="time_range_format">%1$s - %2$s (%3$s)</string>
+    <string name="time_range_format2">%1$s - %2$s (%3$s)</string>
+    <string name="transaction_completed">Transaction Completed</string>
+    <string name="thank_you">Thank you and have a nice day!</string>
+    <string name="thanks">Thank you</string>
+    <string name="do_you_need_setup_time">Do you need set-up time for your event?</string>
+
+    <string name="start_preferred_date_form">Start Preferred Date *</string>
+    <string name="end_preferred_date_form">End Preferred Date</string>
+    <string name="start_preferred_time_form">Start Preferred Time *</string>
+    <string name="end_preferred_time_form">End Preferred Time</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="enter_course_name">Enter course name (at least 3 characters)</string>
+    <string name="enter_event_name">Enter event name (at least 3 characters)</string>
+    <string name="enter_facility_name">Enter facility name (at least 3 characters)</string>
+    <string name="choose_outlet">Choose least a location</string>
+    <string name="please_choose_outlet">Please choose a location</string>
+    <string name="no_facility">There is no facility currently</string>
+    <string name="service_temporarily_unavailable">Service temporarily unavailable.\n\nPlease approach our CC staff for further assistance.</string>
+
+    <string name="booking_fail">Booking failed for transaction: %s.\nPlease approach our CC staff for assistance.</string>
+    <string name="booking_fail_participant">An error has occurred while adding participant. Please try again.</string>
+    <string name="review_booking">An error has occurred. Please review your booking.</string>
+    <string name="rating_label">Please rate our eKiosk.</string>
+    <string name="very_poor">Very Poor</string>
+    <string name="poor">Poor</string>
+    <string name="average">Average</string>
+    <string name="good">Good</string>
+    <string name="excellent">Excellent</string>
+
+    <string name="select_no_attendee">Select no. of Attendees</string>
+    <string name="no_attendee">No. of Attendees</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="attendee_no">Participant %1$d</string>
+    <string name="are_you_sure_to_remove_this_attendee">Are you sure to remove this attendee?</string>
+    <string name="are_you_sure_to_remove_this_ticket">Are you sure to remove this ticket?</string>
+    <string name="scan">Scan</string>
+    <string name="key_in">Key in</string>
+    <string name="nric_passion_card">NRIC/FIN</string>
+    <string name="check_following_course_if_attending">Confirm the items(s) that Participant is attending</string>
+    <string name="continue_button">Continue</string>
+    <string name="none">None</string>
+    <string name="pls_input_valid_nric">Please input NRIC/FIN for participant/payer.</string>
+    <string name="product_already_added_cart">\'%1$s\' is already added to cart.</string>
+    <string name="product_added_cart">\'%1$s\' is added to cart.</string>
+    <string name="verify_payer">Please scan to verify Payer\'s ID.</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="are_you_sure_to_clear_cart">Are you sure to clear the cart?</string>
+
+    <string name="authenticating">Authenticating&#8230;</string>
+    <string name="authenticating_fail">Authentication failed. Please approach our CC staff for assistance</string>
+    <string name="update_kiosk_info">Update kiosk info&#8230;</string>
+    <string name="update_kiosk_info_fail">Update kiosk info fail</string>
+    <string name="get_kiosk_info">Get kiosk info&#8230;</string>
+    <string name="get_kiosk_info_fail">Server error.\neKiosk will be online again in 20 mins.\nPlease approach our CC staff for assistance if needed.</string>
+    <string name="get_data">Getting initiation data&#8230;</string>
+    <string name="get_locations_fail">Locations error.\nWe are unable to process your request now. We apologise for the inconvenience.</string>
+    <string name="get_class_categories_fail">Class error.\nWe are unable to process your request now. We apologise for the inconvenience.</string>
+    <string name="get_event_categories_fail">Event error.\nWe are unable to process your request now. We apologise for the inconvenience.</string>
+    <string name="get_data_fail">We are unable to process your request now. We apologise for the inconvenience.</string>
+    <string name="pls_enter_number_ticket">Please select number of attendee for event.</string>
+    <string name="registration_required">Registration required</string>
+    <string name="removing_attendee_also_remove_item">Removing Attendee will also remove item from cart. Proceed?</string>
+    <string name="non_member_price">NM: %1$s</string>
+    <string name="event_schedule">Event Schedule</string>
+    <string name="max_ten_attendee">Only max 10 attendees can be registered</string>
+    <string name="unable_connect_terminal">Terminal not connected.\nPlease approach our CC staff for assistance</string>
+    <string name="terminal_not_ready">Terminal initialising. Please wait for 10seconds. Thank you.</string>
+    <string name="thankfulness">Thank you!</string>
+
+    <string name="end_session_btn">End session</string>
+    <string name="extend_session_btn">I would like to extend session</string>
+    <string name="enter_search_text">Please enter this field to have a better search.</string>
+    <string name="continue_browsing">Continue Browsing</string>
+    <string name="print_receipt_btn">Yes, print receipt</string>
+    <string name="no_print_receipt_btn">No, end session</string>
+    <string name="back_btn">&lt;  Back</string>
+    <string name="close_settings">Close Settings</string>
+    <string name="search_btn">Search</string>
+    <string name="filter_btn">Filter</string>
+    <string name="next_btn">Next</string>
+    <string name="submit_form_btn">Submit form</string>
+    <string name="add_attendee_btn">+ Add Participant</string>
+    <string name="pay_btn">Pay</string>
+    <string name="close">Close</string>
+    <string name="skip">Skip</string>
+
+    <string name="share_feedback_title">Please share with us your experience using the ekiosk.</string>
+    <string name="maintenance_info_one_day">We will be undergoing scheduled maintenance on %1$s from %2$s to %3$s.\nSorry for any inconvenience caused.</string>
+    <string name="maintenance_info_multi_days">We will be undergoing scheduled maintenance from %1$s to %2$s.\nSorry for any inconvenience caused.</string>
+    <string name="booking_full_for_course">The class is currently full. Please choose another course.</string>
+    <string name="booking_full_for_ig">The Interest Group is currently full. Please choose another interest group.</string>
+    <string name="booking_full_for_event">The event booking is currently full.</string>
+    <string name="indemnity_cleared">Indemnity cleared</string>
+    <string name="indemnity_not_cleared">* Indemnity not cleared</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="indenmity_couter">%1$s / %2$s</string>
+    <string name="external_storage_deny">Permission denied. Try again.</string>
+    <string name="try_again">Try again</string>
+    <string name="external_storage_deny_retry">Permission denied. Please change permissions on settings.</string>
+
+    <string name="all_location_listing">Show All Results</string>
+    <string name="map_view">Map View</string>
+    <string name="list_view">List View</string>
+    <string name="proximity_empty">There are no nearby locations for your search proximity.</string>
+
+    <string name="none_paper">Payment successful</string>
+    <string name="none_paper_content">Printer out of paper. Please approach our CC staff for assistance.</string>
+
+    <string name="checking_firmware">Checking for firmware upgrade</string>
+    <string name="checking_package">Verifying OTA package…</string>
+    <string name="upgrading_system">Upgrading system.\nPlease do not power off device!</string>
+    <string name="upgrading_application">Upgrading application.\nPlease do not power off device!</string>
+    <string name="upgrading_software">Upgrading software database.\nPlease do not power off device!</string>
+    <string name="upgrading_system_fail">Upgrading system failed</string>
+    <string name="upgrading_antivirus_fail">Upgrading Anti virus Database failed</string>
+    <string name="file_not_found">File not found.</string>
+    <string name="file_not_integrity">File is not integrity</string>
+    <string name="download_ota_fail">Download OTA package failed</string>
+    <string name="file_wrong_format">The configuration file is in wrong format</string>
+    <string name="unzip_fail">Unzip OTA package failed</string>
+
+
+    <!--TX80 printer error message-->
+    <string name="deny_storage_permission">Permission denied. Please change permissions on settings.</string>
+    <string name="err_null">Null status</string>
+    <string name="err_call_status_fail">Call status fail</string>
+    <string name="err_arcv">Automatically recoverable error</string>
+    <string name="err_urcv">Unrecoverable error</string>
+    <string name="err_rcv">Recoverable error (need manual intervention)</string>
+    <string name="err_cut">Cutter error</string>
+    <string name="err_busy">Busy</string>
+    <string name="err_cover">The cover of the printer movement is open</string>
+    <string name="err_error">Printer error</string>
+    <string name="noerror">No fault</string>
+    <string name="err_paperend">Out of paper</string>
+    <string name="err_ne">Out of paper</string>
+
+
+    <string name="device_status_process">Checking terminal status</string>
+    <string name="last_txn_process">Checking terminal last transaction</string>
+    <string name="terminal_setting">Terminal Settings</string>
+    <string name="receipt_setting">Receipt</string>
+    <string name="exit_application">Exit Application</string>
+    <string name="log_on">Log on</string>
+    <string name="reset">Reset</string>
+    <string name="reset_sequence_number">Reset sequence number</string>
+    <string name="settlement">Settlement</string>
+    <string name="check_for_update">Check for update</string>
+    <string name="last_transaction">Get last transaction</string>
+    <string name="logs">Logs: </string>
+    <string name="clear_logs">Clear Logs</string>
+    <string name="save_terminal_config">Save Terminal Config</string>
+
+    <!--    USB errors-->
+    <string name="usb_permission_not_granted">USB Permission not granted</string>
+    <string name="no_usb_connected">No USB connected</string>
+    <string name="usb_disconnected">USB disconnected</string>
+    <string name="usb_device_not_supported">USB device not supported</string>
+
+    <string name="serial_port">Terminal response</string>
+    <string name="usb_not_connect">Usb is not connected</string>
+    <string name="line_is_busy">Line is busy</string>
+    <string name="error_occurs">Error occurs</string>
+    <string name="can_not_connect_to_a_terminal_for_payment">Cannot connect to a terminal for payment</string>
+    <string name="can_not_connect_to_a_terminal_please_check_usb_connection">Cannot connect to a terminal, please check usb connection!</string>
+    <string name="payment_fail_please_try_again">Payment fail, please try again!</string>
+
+    <string name="please_call_operator_for_support">Please call operator for support</string>
+    <string name="please_tap_card">Please tap your card</string>
+    <string name="please_insert_or_tap_card">Please tap/insert your card</string>
+    <string name="card_is_invalid_please_try_again">Card is invalid, please try again</string>
+    <string name="payment_type_is_not_supported">Payment type is not supported</string>
+    <string name="scheme_type_is_not_supported">Scheme type is not supported</string>
+    <string name="unexpected_error_please_try_again">Unexpected error, please try again!</string>
+
+    <!--    Status-->
+    <string name="terminal_connection_port_not_ready">Terminal connection port is not ready</string>
+    <string name="terminal_logon_fail">Log on terminal failed</string>
+    <string name="nets_settlement_failed">NETS Settlement failed</string>
+    <string name="nets_settlement_successfully">NETS Settlement successfully</string>
+    <string name="credit_card_settlement_failed">Credit card settlement failed</string>
+    <string name="credit_card_settlement_successfully">Credit card settlement successfully</string>
+    <string name="request_tms_successfully">Request TMS successfully</string>
+    <string name="request_tms_failed">Failed TMS</string>
+
+    <string name="reset_device_successfully">Reset device successfully</string>
+    <string name="reset_device_failed">Reset device failed</string>
+    <string name="reset_sequence_number_successfully">Reset sequence number successfully</string>
+    <string name="reset_sequence_number_failed">Reset sequence number failed</string>
+    <string name="last_transaction_success">Last Transaction Success</string>
+    <string name="last_transaction_fail">Last Transaction Failed</string>
+    <string name="logon_successfully">Logon successfully</string>
+    <string name="logon_failed">Logon failed</string>
+
+    <string name="setting_logon_fail">Logon terminal failed, retry later.</string>
+    <string name="setting_reset_fail">Reset terminal failed, retry later.</string>
+    <string name="setting_reset_sequence_fail">Reset terminal sequence number failed, retry later.</string>
+    <string name="setting_settlement_fail">Settlement failed, retry later.</string>
+    <string name="setting_update_firmware_fail">Update firmware failed, retry later.</string>
+    <string name="setting_last_txn_fail">Get last transaction failed, retry later.</string>
+    <string name="setting_process_fail">Setting terminal fail, please contact the supporter.</string>
+    <string name="verify_payer_scan">Scan to verify Payer\'s ID</string>
+    <string name="verify_payer_key_in">Key in to verify Payer\'s ID</string>
+    <string name="terminal_config_usb">Configure USB connection for terminal</string>
+    <string name="terminal_serial_port">Configure Serial port for terminal</string>
+    <string name="terminal_sof_config">Configure Source of Fund priority</string>
+    <string name="try_another_cc">This facility is not offered at this CC.</string>
+    <string name="booking_success">Payment successful</string>
+
+    <string name="course_id">COURSE ID: %s</string>
+    <string name="id">ID: %s</string>
+    <string name="ig_id">IG ID: %s</string>
+    <string name="events_id">EVENTS ID: %s</string>
+    <string name="facilities_id">Facilities ID: %s</string>
+
+    <string name="home">Home</string>
+    <string name="scan_course_event">Scan Courses\n/Events/IGs</string>
+    <string name="inform_short_traction_pa">*Transactions at this kiosk is currently available for PAssion members only.</string>
+    <string name="sort_by">Sort by</string>
+    <string name="filter_by">Filter by</string>
+    <string name="title_az">Title A-Z</string>
+    <string name="title_za">Title Z-A</string>
+    <string name="start_date">Start Date</string>
+    <string name="participant">Participant</string>
+    <string name="summary">Summary</string>
+    <string name="payment">Payment</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="available_slot">Available Slots</string>
+    <string name="material_fee">Material Fee</string>
+    <string name="add_material_fee">Addition fee for course materials</string>
+    <string name="please_add_participant">Please add Participant</string>
+    <string name="verify">Verify</string>
+    <string name="send">Send</string>
+    <string name="no_end_session">No, end session</string>
+    <string name="yes_print_receipt">Yes, end session</string>
+    <string name="feedback">Feedback</string>
+    <string name="pa_disc">PA Disc%: </string>
+    <string name="scan_participant_id">Please scan Participant ID</string>
+    <string name="select_payer">Please select Payer</string>
+    <string name="not_listed_here">Not listed here</string>
+    <string name="scan_payer">Scan Payer</string>
+    <string name="download_ota_package">Downloading OTA package…</string>
+    <string name="set_sof_priority">Set SOF priority</string>
+    <string name="get_sof_list">Get SOF list</string>
+    <string name="title_get_sof_list">Get SOF list</string>
+    <string name="title_set_sof_list">Set SOF priority</string>
+    <string name="get_sof_list_failed">Get SOF list failed, retry later.</string>
+    <string name="set_sof_list_failed">Set SOF priority failed, retry later.</string>
+    <string name="set_sof_priority_value_warning">Cannot contains 2 items have same priority value</string>
+    <string name="get_sof_first">Please get SOF list first.</string>
+    <string name="save_setting_message">Terminal config success</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_previous">Previous</string>
+    <string name="delete_txn">Delete Txn</string>
+    <string name="txn_no">TXN No</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="completed_at">Completed At</string>
+    <string name="created_at">Created At</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="cart_id">Cart ID</string>
+    <string name="skill_future_msg_detail">*SkillsFuture Credit cannot be used at kiosk. Please do so instead at onePA.gov.sg.\n</string>
+    <string name="skill_future_msg_cart">SkillsFuture Credit cannot be used at kiosk. Full amount (less discounts) will be charged.\n</string>
+    <string name="unable_delete_cart_and_recreate">Unable to update cart. Please try later.</string>
+    <string name="checking_software_update">Checking software updates…</string>
+    <string name="extracting_ota">Extracting OTA package…</string>
+    <string name="invalid_cart">Invalid Cart. Please try again.</string>
+    <string name="invalid_cart_product_not_match">Cart is not valid. Please try again.</string>
+    <string name="session_timeout">Session timeout. Please try again.</string>
+
+    <string name="order_not_finish_yet_title">You haven\'t finished your order yet</string>
+    <string name="order_not_finish_yet_msg">Your cart will be deleted. Are you sure you want to leave this session?.</string>
+
+    <string name="reservation_error">%s: %s</string>
+    <string name="participant_error">%s: Participant %s already added.</string>
+
+    <!--BEGIN Terminal error-->
+    <string name="terminal_pending">Processing. Please wait.</string>
+    <string name="terminal_timeout">Time Out. Please try again. </string>
+    <string name="terminal_invalid_parameter">Invalid Parameter. Please try again or contact our CC staff for further assistance.</string>
+    <string name="terminal_incorrect_low">Incorrect Flow error. Please try again. </string>
+    <string name="terminal_msg_integrity_failed">ECR data transfer failed. Please contact our CC staff for further assistance.</string>
+    <string name="terminal_msg_type_not_supported">Msg type not Supported. Please contact our CC staff for further assistance.</string>
+    <string name="terminal_msg_msg_code_not_supported">Msg Code Not Supported. Please contact our CC staff for further assistance.</string>
+    <string name="terminal_msg_authentication_required">Msg Authentication Required</string>
+    <string name="terminal_msg_authentication_failed">Msg Authentication Failed </string>
+    <string name="terminal_msg_mac_failed">Msg MAC Failed</string>
+    <string name="terminal_msg_length_mismatch">Msg Length error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_length_minimum">Msg Length error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_length_maximum">Msg Length error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_version_invalid">Msg Version Invalid</string>
+    <string name="terminal_msg_class_invalid">Msg Class Invalid</string>
+    <string name="terminal_msg_status_invalid">Msg Status Invalid</string>
+    <string name="terminal_msg_algorithm_invalid">Msg Algorithm error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_algorithm_is_mandatory">Msg Algorithm error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_key_index_invalid">Msg key index error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_notification_invalid">Msg notification error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_completion_invalid">Msg Completion Invalid. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_data_transparency_error">Msg Data Tranaparency error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_msg_incomplete">Msg incomplete error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_mandatory_missing">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_length_invalid">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_length_minimum">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_type_invalid">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_encoding_invalid">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_data_invalid">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_field_parsing_error">FIELD error. Please contact our CC staff for further assistance. </string>
+    <string name="terminal_card_not_detected">Card not detected. Please try again.</string>
+    <string name="terminal_card_error">Card error. Please try again.</string>
+    <string name="terminal_card_blacklisted">Card cannot be accepted. Please use another card. </string>
+    <string name="terminal_card_blocked">Card is blocked. Please use another card. </string>
+    <string name="terminal_card_expired">Card expired. Please use another card.</string>
+    <string name="terminal_card_invalid_issuer_id">Card Invalid. Please use another card.</string>
+    <string name="terminal_card_invalid_purse_value">Card Invalid. Please use another card.</string>
+    <string name="terminal_card_credit_not_allowed">Credit Card not allowed. Please use another card. </string>
+    <string name="terminal_card_debit_not_allowed">Debit Card not allowed. Please use another card. </string>
+    <string name="terminal_card_insufficient_fund">Insufficent fund. Please use another card.</string>
+    <string name="terminal_card_exceeded_purse_value">Card Purse error. Please use another card.</string>
+    <string name="terminal_card_credit_failed">Credit card failed. Please use another card or approach our CC staff for assistance.</string>
+    <string name="terminal_card_credit_unconfirmed">Card Credit Unconfirmed</string>
+    <string name="terminal_card_debit_failed">Debit card failed. Please use another card or approach our CC staff for assistance.</string>
+    <string name="terminal_card_debit_unconfirmed">Card Unconfirmed. Please try again. Or use another card.</string>
+    <string name="terminal_card_not_removed">Please remove card. </string>
+    <string name="terminal_communication_no_response">Terminal unable to get host response. Please try again later. </string>
+    <string name="terminal_communication_error">Terminal connection failed. Please try again later. </string>
+    <string name="terminal_sof_invalid_card">Wrong card used. Please use card as per selected payment mode. </string>
+    <string name="terminal_sof_incorrect_pin">Incorrect pin. Please try again. </string>
+    <string name="terminal_sof_insufficient_fund">Insufficent fund. Please use another card</string>
+    <string name="terminal_sof_closed">SOF – Closed </string>
+    <string name="terminal_sof_blocked">SOF – Blocked</string>
+    <string name="terminal_sof_refer_to_bank">Transaction declined by bank. Please use another card</string>
+    <string name="terminal_sof_cancel">Transaction cancelled. </string>
+    <string name="terminal_sof_host_response_decline">Host Response Decline. You have keyed an invalid pin or your card is not supported. Please use another card. </string>
+    <string name="terminal_sof_logon_required">Logon required. Please contact CC staff for assistance. </string>
+    <!--END Terminal error-->
+
+    <string name="profile">Profile</string>
+    <string name="booking_for_myself">Booking for Myself</string>
+    <string name="booking_on_behalf_of_someone">Booking on behalf for someone</string>
+    <string name="add_participant">Add Participant</string>
+    <string name="add">Add</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile_number_hint">eg. 82345678</string>
+    <string name="email_string">Email</string>
+    <string name="email_string_hint">customer@email.com</string>
+    <string name="asterisk">*</string>
+    <string name="please_enter_a_name">Please enter a name</string>
+    <string name="please_enter_a_mobile_number">Please enter a mobile number</string>
+    <string name="please_enter_a_email_address">Please enter a email address</string>
+    <string name="please_enter_correct_email_address">Please enter correct email address</string>
+    <string name="check_out">Check Out</string>
+    <string name="declaration">Declaration</string>
+    <string name="term_and_conditions">Terms &amp; Conditions</string>
+    <string name="declaration_facility">I confirm that I have obtained my parent’s legal guardian’s consent to participate in the Activity/ Progamme and/or use the facilities and equipments as started in this [registration form] and the Terms &amp; Conditions. </string>
+    <string name="declaration_ig_1">I hereby declare that all information provided are true and correct; and agree to abide and be bound by the Terms &amp; Conditions of the Community Club Management Committees, other People’s Association Organizations; and authorize the People’s Association to disclose my personal information to its employees, service providers, vendor and affiliated partners.</string>
+    <string name="declaration_ig_2">I understand that my participation in this activity/programme is strictly voluntary and it involves certain risks, including risks arising from the nature of the activity/programme. I confirm that I have no physical or medical condition that would make my participation in this activity/programme unsafe for myself or others. I agree to: \n\n A. cooperate fully with the staff and trainers and abide by all instructions, safety processes and systems for the activity/programme; and \n\n B. inform the staff and trainers if I feel unwell at any time during the activity/programme or if I do not wish to continue participating in the activity/programme.</string>
+    <string name="need_to_check_declaration">Need to check Declaration</string>
+
+    <string name="interest_groups">Interest Groups</string>
+    <string name="group_description">Group Description</string>
+    <string name="organising_committee">Organising Committee</string>
+    <string name="interest_group_details_fee_note">*Note that additional fee(s) and/or discount(s) may be applied upon checkout</string>
+    <string name="interest_group_details_participant_note">*Note that only a maximum of %s participants can be registered per transaction.</string>
+    <string name="membership_period">Membership Period</string>
+
+    <string name="event_details_note_1">*Note that additional fee(s) and/or discount(s) may be applied upon checkout</string>
+    <string name="event_details_note_2">*Note that you may be denied entry to the event if you purchased from an invalid ticket category</string>
+    <string name="event_details_note_3">*Refer to Ticket Pricing for more details on ticket bundles and other ticket conditions</string>
+
+    <string name="please_select_ticket_type">Please select Ticket Type</string>
+    <string name="ticket_type">Ticket Type</string>
+    <string name="quantity">Quantity</string>
+    <string name="proceed">Proceed</string>
+    <string name="add_ticket_type_btn">+ Add Ticket Type</string>
+    <string name="select_ticket_type_btn">+ Select Ticket Type</string>
+    <string name="pricing">Pricing</string>
+    <string name="venue">Venue</string>
+    <string name="physical_venue">Physical Venue</string>
+    <string name="special_instructions">Special Instructions</string>
+    <string name="event_faq">Event FAQ</string>
+    <string name="valid_till_with_datetime">Valid till %s</string>
+    <string name="cannot_get_list_ticket">Can not get list tickets</string>
+    <string name="event_has_no_available_ticket">Event has no available ticket to show</string>
+    <string name="fill_in_particulars_to_proceed">Fill in particulars to proceed</string>
+    <string name="ticket">Ticket</string>
+    <string name="ticket_form">Ticket - %s</string>
+    <string name="total_with_colon_form">Total: %s</string>
+    <string name="only_one_set_of_participant">Only one set of participant details is required for this ticket type.</string>
+    <string name="need_to_set_all_of_participant">Need to set all of participant details is required for this ticket type.</string>
+    <string name="participant_form">Participant %s</string>
+    <string name="error_cannot_get_cart">Error: Can not get cart</string>
+
+    <string name="email_str">Email</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="postal_zipcode">Postal / Zip Code</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="citizenship">Citizenship</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="dietary_preferences">Dietary Preferences</string>
+    <string name="home_address">Home Address</string>
+    <string name="indemnity">Indemnity</string>
+    <string name="next_of_kin_contact_no">Next Of Kin\'s Contact No.</string>
+    <string name="next_of_kin_name">Next Of Kin\'s Name</string>
+    <string name="no_of_accompanying_guest">No. of accompanying guest</string>
+    <string name="nric_no_uen_no">NRIC No. / UEN No.</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="remarks">Remarks</string>
+    <string name="salutation">Salutation</string>
+    <string name="serial_no">Serial No.</string>
+    <string name="save">Save</string>
+    <string name="msg_existed_participant_event">Existed Participant. Please add another participant</string>
+    <string name="msg_max_ticket_event">Ticket quantity has been maximum</string>
+    <string name="ticket_type_name_with_price">%s - %s</string>
+    <string name="total_ticket_with_qty">Total Ticket(s): %s</string>
+    <string name="total_attendee_with_qty">Total Attendee(s): %s</string>
+    <string name="please_check_attendee_info">Please check attendee info</string>
+    <string name="sold_out">Sold out</string>
+    <string name="please_check_attendees">Please check attendees</string>
+    <string name="pa_discount">PA Discount: </string>
+    <string name="you_can_select_ticket_types_in_max">You can select %s ticket types in max</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="error_min_event_ticket">Event: %s - Ticket Type: %s - Min ticket: %s</string>
+    <string name="attendee_form_not_available">Attendee form not available</string>
+    <string name="select_time_title">Select Time</string>
+
+</resources>

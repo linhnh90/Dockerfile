@@ -1,0 +1,54 @@
+FROM ubuntu:latest
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get -y update \
+&& apt-get -y upgrade
+
+RUN apt-get -y install software-properties-common \
+    git \
+    gnupg \
+    sudo \
+    nano \
+    vim \
+    wget \
+    curl \
+    zip \
+    unzip \
+    build-essential \
+    libtool \
+    autoconf \
+    uuid-dev \
+    pkg-config \
+    libsodium-dev \
+    lynx-common \
+    tcl \
+    inetutils-ping \
+    net-tools \
+    ssh \
+    openssh-server \
+    openssh-client \
+    openssl \
+    letsencrypt \
+    apt-transport-https \
+    telnet \
+    locales \
+    gdebi \
+    gpg \
+    lsb-release
+
+RUN apt-get clean
+RUN sudo apt search openjdk
+RUN apt-get -y install openjdk-11-jdk
+#Download & add repository key
+RUN curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+#Getting binary file into /etc/apt/sources.list.d
+RUN sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null'
+#Updating packages
+RUN sudo apt-get update
+#Installing Jenkins
+RUN sudo apt-get -y install jenkins
+ENV JENKINS_HOME /var/lib/jenkins
+COPY ./jenkins-entrypoint.sh .
+
+EXPOSE 8080
+CMD service jenkins start && tail -f /var/log/jenkins/jenkins.log

@@ -1,0 +1,72 @@
+apply plugin: 'jacoco'
+
+ext {
+    coverageExclusions = [
+            '**/*Activity*.*',
+            '**/*Fragment*.*',
+            '**/*Adapter*.*',
+            '**/*Contact*.kt',
+            '**/*Contract*.kt',
+            '**/*Base*.kt',
+            '**/customViews/**',
+            '**/view/**',
+            '**/scanNric/**',
+            '**/adapters/**',
+            '**/entities/**',
+            '**/interfaces/**',
+            '**/proximity/**',
+            '**/serverlocal/**',
+            '**/terminal/**',
+            '**/scanner/**',
+            '**/printer/**',
+            '**/receiver/**',
+            '**/peripheralsManager/**',
+            '**/database/**',
+            '**/router/**',
+            '**/R.class',
+            '**/R$*.class',
+            '**/BuildConfig.*',
+    ]
+}
+
+jacoco {
+    toolVersion = '0.8.7'
+    reportsDir = file("$buildDir/reports")
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+    // https://github.com/gradle/gradle/issues/5184#issuecomment-457865951
+    jacoco.excludes = ['jdk.internal.*']
+}
+
+
+tasks.withType(Test) {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testSitDebugUnitTest']) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports for Debug build"
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    def javaTree = fileTree(
+            dir: "${buildDir}/intermediates/javac/sitDebug/classes",
+            excludes: coverageExclusions
+    )
+    def kotlinTree = fileTree(
+            dir: "${buildDir}/tmp/kotlin-classes/sitDebug",
+            excludes: coverageExclusions
+    )
+    def mainSrc = "/src/main/java"
+
+    additionalSourceDirs.from = files(mainSrc)
+    sourceDirectories.from = files([mainSrc])
+    classDirectories.from = files([javaTree, kotlinTree])
+
+    executionData.from = files("$buildDir/jacoco/testSitDebugUnitTest.exec")
+}

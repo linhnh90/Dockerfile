@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="@dimen/width_dialog"
+        android:layout_height="@dimen/height_dialog"
+        android:layout_margin="@dimen/dp_25"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:id="@+id/ln_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_top_dialog"
+            android:layout_marginEnd="@dimen/margin_end_dialog"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_dialog">
+
+            <TextView
+                android:id="@+id/txt_class_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_xnormal"
+                tools:text="Zumba@Fitness" />
+
+            <TextView
+                android:id="@+id/txt_attendee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_small"
+                tools:text="Andy Lau Hock" />
+
+            <TextView
+                android:id="@+id/txt_attendee_nric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_small"
+                tools:text="Andy Lau Hock" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <WebView
+                    android:id="@+id/wv_indemnity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fadeScrollbars="false"
+                    android:scrollbarSize="@dimen/scroll_bar_width"
+                    android:scrollbarThumbVertical="@drawable/bg_scrollview_thumb"
+                    android:scrollbarTrackVertical="@drawable/bg_scrollview_track"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txt_indemnity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="@dimen/text_size_small"
+                    android:fadeScrollbars="false"
+                    android:scrollbarSize="@dimen/scroll_bar_width"
+                    android:scrollbarThumbVertical="@drawable/bg_scrollview_thumb"
+                    android:scrollbarTrackVertical="@drawable/bg_scrollview_track"
+                    android:scrollbars="vertical"
+                    tools:text=""/>
+
+                <View
+                    android:id="@+id/vd_loading_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@color/opacity_purple_color"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:indeterminateTint="@color/red_color"
+                    android:padding="@dimen/dp_200"
+                    android:progressTint="@color/red_color"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="@color/bright_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone"
+                    tools:text="1 / 4" />
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    style="@style/ButtonRedSmall"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="@string/accept"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_deny"
+                    style="@style/ButtonWhiteSmall"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_30"
+                    android:layout_toStartOf="@id/btn_accept"
+                    android:text="@string/deny"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/rl_content"
+        android:layout_marginEnd="-30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_red" />
+</RelativeLayout>

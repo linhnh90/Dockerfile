@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_payer"
+    android:padding="@dimen/dp_10"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RadioButton
+        android:id="@+id/rb_payer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@drawable/bg_session_normal_rate"
+        android:clickable="false" />
+    
+    <TextView android:id="@+id/tv_payer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_small"
+        android:layout_toEndOf="@id/rb_payer"
+        tools:text = "@string/not_listed_here"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_20"/>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:paddingVertical="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_15">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:src="@drawable/img_single_participant" />
+
+    <TextView
+        android:id="@+id/tv_participant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_toStartOf="@id/iv_edit"
+        android:layout_toEndOf="@+id/iv_profile"
+        android:fontFamily="@font/opensans_bold"
+        android:textAlignment="textStart"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_xnormal"
+        tools:text="Participant 1" />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_participant_name"
+        android:layout_alignStart="@+id/tv_participant_name"
+        android:layout_marginTop="@dimen/dp_5"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/fill_in_particulars_to_proceed"
+        android:textColor="@color/light_orange"
+        android:textSize="@dimen/text_size_xsmall" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:contentDescription="@null"
+        android:src="@drawable/img_edit" />
+</RelativeLayout>

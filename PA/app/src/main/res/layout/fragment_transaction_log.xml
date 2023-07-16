@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_5">
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/setting_clear_button_height"
+        android:layout_toEndOf="@+id/btn_previous"
+        android:background="@drawable/bg_blue_radius"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_5"
+        android:text="@string/btn_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/setting_clear_button_height"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_blue_radius"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:text="@string/btn_previous"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btn_delete_txn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/setting_clear_button_height"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_red_radius"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:text="@string/delete_txn"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_delete_txn"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/rectangle" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_delete_txn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/txt_txn_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txn_no"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_customer_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1.5"
+            android:text="@string/customer_id"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1"
+            android:text="@string/customer_name"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_cart_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1.5"
+            android:text="@string/cart_id"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_payment_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1"
+            android:text="@string/payment_status"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_created_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1"
+            android:text="@string/created_at"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_completed_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_weight="1"
+            android:text="@string/completed_at"
+            android:textColor="@color/black_color_2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_selected_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="@null"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="wrap_content"
+        android:layout_height="0.15dp"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/bright_gray" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_txn_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_line"
+        android:scrollbars="none" />
+
+</RelativeLayout>

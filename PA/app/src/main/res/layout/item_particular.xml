@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_delete_attendee"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:contentDescription="@null"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_remove" />
+
+        <LinearLayout
+            android:id="@+id/ll_attendee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toEndOf="@id/img_delete_attendee"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_participant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black_color" />
+
+            <TextView
+                android:id="@+id/txt_name_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                tools:text="Zumba@Fitness"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:id="@+id/v_particular_line"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/bright_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_none_attendee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toEndOf="@id/img_delete_attendee"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/no_attendee"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/txt_no_attendee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_normal"
+                tools:text="0" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_discount_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/pa_disc"
+            android:textColor="@color/black_color"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/txt_promo_discount_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/promo_discount"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_discount_percent"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:fontFamily="@font/opensans_regular"-->
+<!--        android:gravity="end"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:text="@string/pa_disc"-->
+<!--        android:textColor="@color/black_color"-->
+<!--        android:textSize="@dimen/text_size_normal" />-->
+
+
+    <RelativeLayout android:id="@+id/rl_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="end"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tmp"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="end"
+            tools:text="$130.00"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/txt_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_price"
+            android:layout_marginTop="@dimen/dp_10"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="end"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_normal"
+            tools:text="$130.00" />
+
+        <TextView
+            android:id="@+id/txt_promo_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_discount"
+            android:layout_marginTop="@dimen/dp_10"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="end"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_normal"
+            tools:text="$130.00" />
+
+    </RelativeLayout>
+</LinearLayout>

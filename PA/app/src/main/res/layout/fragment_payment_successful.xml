@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_bar_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/bg_bar_purple3"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_progress_payment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/receipt_number"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_normal"
+            android:paddingStart="@dimen/dp_100"
+            android:paddingEnd="@dimen/dp_50"/>
+
+        <TextView
+            android:id="@+id/txt_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:fontFamily="@font/opensans_light"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_hlarge"
+            tools:text="34241436"
+            android:paddingStart="@dimen/dp_100"
+            android:paddingEnd="@dimen/dp_50"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_printing_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_suggest_receipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_330"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/receive_receipt_question"
+                        android:background="@drawable/bg_gradient_green"
+                        android:textColor="@color/white_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/txt_suggest_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_suggest_receipt"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/receive_receipt_by_email"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_container_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_suggest_email"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/etMail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:autofillHints="@string/receive_receipt_by_email_hint"
+                            android:backgroundTint="@color/dark_grey_color"
+                            android:drawableEnd="@drawable/ic_pen"
+                            android:gravity="center_vertical"
+                            android:hint="@string/receive_receipt_by_email_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
+                            android:paddingBottom="@dimen/dp_20"
+                            android:text=""
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/dark_grey_color"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <Button
+                            android:id="@+id/btn_send_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:text="@string/send"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_color"
+                            android:background="@drawable/border_corner_red" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_or"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_container_email"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/or"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@id/txt_or">
+    
+                        <Button
+                            android:id="@+id/print_receipt"
+                            android:layout_width="@dimen/dp_350"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:background="@drawable/border_corner_red"
+                            android:fontFamily="@font/opensans_bold"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/dp_15"
+                            android:text="@string/print_receipt_btn"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/text_size_xnormal" />
+    
+                        <Button
+                            android:id="@+id/btn_end_session"
+                            android:layout_width="@dimen/dp_350"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/print_receipt"
+                            android:background="@drawable/border_corner_red_trans"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingVertical="@dimen/dp_15"
+                            android:text="@string/no_end_session"
+                            android:textAllCaps="false"
+                            android:textColor="@color/red_color_3"
+                            android:textSize="@dimen/text_size_xnormal" />
+                    </RelativeLayout>
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_none_paper_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_80"
+                    android:paddingStart="@dimen/dp_100"
+                    android:paddingEnd="@dimen/dp_50">
+
+                    <ImageView
+                        android:id="@+id/img_none_paper"
+                        android:layout_width="@dimen/dp_350"
+                        android:layout_height="@dimen/dp_310"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/dp_80"
+                        android:layout_marginEnd="@dimen/dp_280"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_no_paper" />
+
+                    <TextView
+                        android:id="@+id/txt_no_paper_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/img_none_paper"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/none_paper"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_xxxlarge" />
+
+                    <TextView
+                        android:id="@+id/txt_no_paper_content"
+                        android:layout_width="@dimen/dp_330"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_no_paper_title"
+                        android:layout_marginTop="@dimen/dp_50"
+                        android:paddingVertical="@dimen/dp_15"
+                        android:layout_toStartOf="@id/img_none_paper"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/none_paper_content"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        style="@style/ButtonWhiteSmall"
+                        android:layout_width="@dimen/dp_330"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_no_paper_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:text="@string/end_session"
+                        android:textAllCaps="false" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
+

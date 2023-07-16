@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_progress_payment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+    
+    <ImageView android:id="@+id/iv_participant"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_progress_payment"
+        android:scaleY="1.2"
+        android:src="@drawable/bg_arrow_disable"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <ImageView android:id="@+id/iv_number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_progress_payment"
+        android:src="@drawable/ring_disable"
+        android:layout_marginStart="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="@id/iv_participant"
+        app:layout_constraintTop_toTopOf="@id/iv_participant"
+        app:layout_constraintBottom_toBottomOf="@id/iv_participant"/>
+    
+    <TextView android:id="@+id/tv_number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="1"
+        android:fontFamily="@font/opensans_bold"
+        app:layout_constraintStart_toStartOf="@id/iv_number_1"
+        app:layout_constraintEnd_toEndOf="@id/iv_number_1"
+        app:layout_constraintTop_toTopOf="@id/iv_number_1"
+        app:layout_constraintBottom_toBottomOf="@id/iv_number_1"/>
+    
+    <TextView android:id="@+id/tv_participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="@string/participant"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintStart_toEndOf="@id/iv_number_1"
+        app:layout_constraintTop_toTopOf="@id/iv_participant"
+        app:layout_constraintBottom_toBottomOf="@id/iv_participant"/>
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+    
+    <ImageView android:id="@+id/iv_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_progress_payment"
+        android:src="@drawable/bg_arrow_disable"
+        android:scaleY="1.2"
+        app:layout_constraintStart_toStartOf="@id/guideline_1"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <ImageView android:id="@+id/iv_number_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ring_disable"
+        android:layout_marginStart="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="@id/iv_summary"
+        app:layout_constraintTop_toTopOf="@id/iv_participant"
+        app:layout_constraintBottom_toBottomOf="@id/iv_participant"/>
+    
+    <TextView android:id="@+id/tv_number_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="2"
+        android:fontFamily="@font/opensans_bold"
+        app:layout_constraintStart_toStartOf="@id/iv_number_2"
+        app:layout_constraintEnd_toEndOf="@id/iv_number_2"
+        app:layout_constraintTop_toTopOf="@id/iv_number_2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_number_2"/>
+    
+    <TextView android:id="@+id/tv_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="@string/summary"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintStart_toEndOf="@id/iv_number_2"
+        app:layout_constraintTop_toTopOf="@id/iv_summary"
+        app:layout_constraintBottom_toBottomOf="@id/iv_summary"/>
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+    
+    <ImageView android:id="@+id/iv_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_progress_payment"
+        android:scaleY="1.2"
+        android:src="@drawable/bg_arrow_disable"
+        app:layout_constraintStart_toStartOf="@id/guideline_2"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <ImageView android:id="@+id/iv_number_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ring_disable"
+        android:layout_marginStart="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="@id/iv_payment"
+        app:layout_constraintTop_toTopOf="@id/iv_payment"
+        app:layout_constraintBottom_toBottomOf="@id/iv_payment"/>
+    
+    <TextView android:id="@+id/tv_number_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="3"
+        android:fontFamily="@font/opensans_bold"
+        app:layout_constraintStart_toStartOf="@id/iv_number_3"
+        app:layout_constraintEnd_toEndOf="@id/iv_number_3"
+        app:layout_constraintTop_toTopOf="@id/iv_number_3"
+        app:layout_constraintBottom_toBottomOf="@id/iv_number_3"/>
+    
+    <TextView android:id="@+id/tv_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="@string/payment"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintStart_toEndOf="@id/iv_number_3"
+        app:layout_constraintTop_toTopOf="@id/iv_payment"
+        app:layout_constraintBottom_toBottomOf="@id/iv_payment"/>
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+    
+    <ImageView android:id="@+id/iv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_progress_payment"
+        android:scaleY="1.2"
+        android:src="@drawable/bg_arrow_disable"
+        app:layout_constraintStart_toStartOf="@id/guideline_3"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <ImageView android:id="@+id/iv_number_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ring_disable"
+        android:layout_marginStart="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="@id/iv_confirm"
+        app:layout_constraintTop_toTopOf="@id/iv_confirm"
+        app:layout_constraintBottom_toBottomOf="@id/iv_confirm"/>
+    
+    <TextView android:id="@+id/tv_number_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="4"
+        android:fontFamily="@font/opensans_bold"
+        app:layout_constraintStart_toStartOf="@id/iv_number_4"
+        app:layout_constraintEnd_toEndOf="@id/iv_number_4"
+        app:layout_constraintTop_toTopOf="@id/iv_number_4"
+        app:layout_constraintBottom_toBottomOf="@id/iv_number_4"/>
+    
+    <TextView android:id="@+id/tv_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_grey_color"
+        android:text="@string/confirmation"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintStart_toEndOf="@id/iv_number_4"
+        app:layout_constraintTop_toTopOf="@id/iv_confirm"
+        app:layout_constraintBottom_toBottomOf="@id/iv_confirm"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

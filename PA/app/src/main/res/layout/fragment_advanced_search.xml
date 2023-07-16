@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_color">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null"
+        android:scaleType="matrix" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_close"
+        android:tint="@color/light_blue_color" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_160"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp_65">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/find_your_courses_here"
+            android:textColor="@color/yellow_color"
+            android:textSize="@dimen/text_size_hlarge" />
+
+        <RadioGroup
+            android:id="@+id/rg_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toEndOf="@id/txt_title"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_course"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_white_bg_trans_25"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text="@string/courses"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_medium" />
+
+            <RadioButton
+                android:id="@+id/rb_event"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_30"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text="@string/events"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_medium" />
+        </RadioGroup>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_find_courses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:autofillHints="@string/find_courses"
+                    android:backgroundTint="@color/light_blue2_color"
+                    android:drawableStart="@drawable/ic_course2"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:fontFamily="@font/opensans_light"
+                    android:hint="@string/find_courses"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:textColor="@color/light_blue_color"
+                    android:textColorHint="@color/light_blue_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_italic"
+                    android:paddingStart="@dimen/dp_40"
+                    android:text="@string/mandatory"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_60"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_start_date"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:fontFamily="@font/opensans_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_start_date"
+                        android:textColor="@color/yellow_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_outlet"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:fontFamily="@font/opensans_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_locations"
+                        android:textColor="@color/yellow_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <TextView
+                        android:id="@+id/txt_categories_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_course_categoty"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:fontFamily="@font/opensans_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_course_categories"
+                        android:textColor="@color/yellow_color"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_preferred_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_light_blue_editext"
+                        android:fontFamily="@font/opensans_regular"
+                        android:hint="@string/select_preferred_date_hint"
+                        android:paddingStart="@dimen/dp_40"
+                        android:paddingTop="@dimen/dp_30"
+                        android:paddingBottom="@dimen/dp_25"
+                        android:textColor="@color/light_blue_color"
+                        android:textColorHint="@color/light_blue_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_spinner2"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_regular"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/dp_30"
+                        android:textColor="@color/light_blue_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/txt_categories"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_spinner2"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_regular"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/dp_30"
+                        android:textColor="@color/light_blue_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_italic"
+                        android:paddingStart="@dimen/dp_40"
+                        android:text="@string/multiple_selection_is_allowed_mandatory"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_italic"
+                        android:paddingStart="@dimen/dp_40"
+                        android:text="@string/multiple_selection_is_allowed"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_60"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_suitable"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:fontFamily="@font/opensans_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_suitability"
+                        android:textColor="@color/yellow_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/txt_preferred_day_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_preferred_day"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:fontFamily="@font/opensans_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_preferred_day"
+                        android:textColor="@color/yellow_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spn_suitability"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_spinner2"
+                        android:overlapAnchor="false"
+                        android:paddingBottom="@dimen/dp_20" />
+
+                    <TextView
+                        android:id="@+id/txt_preferred_day"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_spinner2"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_regular"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/dp_30"
+                        android:textColor="@color/light_blue_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_search"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_120"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="-20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yellow"
+                        android:contentDescription="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:scaleType="centerInside">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_search2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:fontFamily="@font/opensans_bold"
+                            android:text="@string/search_btn"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txt_preferred_day_suggest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_italic"
+                        android:paddingStart="@dimen/dp_40"
+                        android:text="@string/multiple_selection_is_allowed"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

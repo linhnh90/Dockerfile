@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".modules.feedback.view.FeedbackFragment">
+    
+    <ImageView android:id="@+id/iv_bg_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/bg_grey_gradient_top"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/title_height">
+    
+        <TextView android:id="@+id/txt_venue_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:text="@string/share_feedback_title"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_hlarge"
+            />
+    
+    <EditText
+        android:id="@+id/edt_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80"
+        android:backgroundTint="@color/black_color"
+        android:fontFamily="@font/opensans_regular"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:layout_marginHorizontal="@dimen/dp_100"
+        android:layout_below="@id/txt_venue_label"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_large" />
+    
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/ButtonRedSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_below="@id/edt_feedback"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit"
+        android:textAllCaps="false" />
+
+    </RelativeLayout>
+</LinearLayout>

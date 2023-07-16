@@ -1,0 +1,3 @@
+include ':upt1000sdk-2.0.1'
+include ':printlib'
+include ':app', ':barcode_scanner_library_v2.3.2.0', ':coresdk-khadas-1.0.5'

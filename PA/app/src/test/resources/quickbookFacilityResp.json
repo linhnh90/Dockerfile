@@ -1,0 +1,12 @@
+{
+  "bodyContent": {
+    "response": {
+      "CartId": "Online-Quickbook-{bafaec8f-d21b-4430-94e4-7460767da6d6}",
+      "SessionId": "31321ec1-fe08-42bf-a57b-2b0ead1d4e02"
+    },
+    "responseStatusCode": 0,
+    "hasError": false,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

@@ -1,0 +1,26 @@
+{
+  "outletId":"7040354b-8e8f-e511-80c3-00155d004f00",
+  "outletName":"Nanyang CC",
+  "resourceID":"{6CE0B51C-A9EC-AE3B-EA1F-D88108A4290C}",
+  "resourceName":"BADMINTON COURT 01",
+  "resourceSubTypeName":"BADMINTON COURTS",
+  "operatingHours":"09:30 - 21:30",
+  "imageUrl":"/getimage.aspx?imagetype=4&id=A67F90A7-4968-E611-80D9-00155DAD210B",
+  "resourceFeeList":[
+    {
+      "feeName":"Rental Fee for PAssion Card Members",
+      "feeNormalAmount":4.0,
+      "feePeakAmount":7.0
+    },
+    {
+      "feeName":"Rental Fee for Public ",
+      "feeNormalAmount":5.0,
+      "feePeakAmount":8.0
+    }
+  ],
+  "bookingInAdvance":15,
+  "bookingInAdvanceType":"day",
+  "isBookable": true,
+  "sku": "NanyangCC_BADMINTONCOURT01",
+  "crmResourceId": "a67f90a7-4968-e611-80d9-00155dad210b"
+}

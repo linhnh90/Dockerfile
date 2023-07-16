@@ -1,0 +1,125 @@
+{
+  "promotionList": [
+    {
+      "code": "INTRO2",
+      "description": "Testing for utilised promo code",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- Get $1 off courses with no minimum spend",
+      "termsAndConditions2": "- Applicable to all users",
+      "termsAndConditionsLink": "",
+      "type": "Course"
+    },
+    {
+      "code": "passion1offgeneral",
+      "description": "10% off Facilities",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- Get $1 off facilities with no minimum spend",
+      "termsAndConditions2": "- Applicable to all users",
+      "termsAndConditionsLink": "",
+      "type": "Outlet"
+    },
+    {
+      "code": "passion10%general",
+      "description": "10% off PCM Sign Up for all",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- All users are eligible for 10% PCM Sign Up, capped at $2",
+      "termsAndConditions2": null,
+      "termsAndConditionsLink": "",
+      "type": "Outlet"
+    },
+    {
+      "code": "SELECTOUTLETS",
+      "description": "10% off selected outlet Courses",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- 10% off cap at $2.10 for all users with minimum spend of $5",
+      "termsAndConditions2": "- Applicable for users from Acacia RC, Aljunied CC, Anchorvale CC, AMK CC",
+      "termsAndConditionsLink": "",
+      "type": "Outlet"
+    },
+    {
+      "code": "TEST000",
+      "description": "Get $5 off for all products",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "<p>- Get $5 off all products across all outlets</p><p>- Minimum Spend of $10</p>",
+      "termsAndConditions2": null,
+      "termsAndConditionsLink": "",
+      "type": "Membership"
+    },
+    {
+      "code": "INTROKKK2",
+      "description": "10% off ",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- 10% off cap at $2.10 for all users with minimum spend of $5",
+      "termsAndConditions2": "- Applicable for users from Acacia RC, Aljunied CC, Anchorvale CC, AMK CC",
+      "termsAndConditionsLink": "",
+      "type": "Course"
+    },
+    {
+      "code": "TESTPROMO",
+      "description": "Testing for utilised promo code",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- Get $1 off courses with no minimum spend",
+      "termsAndConditions2": "- Applicable to all users",
+      "termsAndConditionsLink": "",
+      "type": "Course"
+    },
+    {
+      "code": "TESTPROMO11",
+      "description": "10% off Facilities",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- Get $1 off facilities with no minimum spend",
+      "termsAndConditions2": "- Applicable to all users",
+      "termsAndConditionsLink": "",
+      "type": "Facility"
+    },
+    {
+      "code": "PCMGLOBAL",
+      "description": "10% off PCM Sign Up for all",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- All users are eligible for 10% PCM Sign Up, capped at $2",
+      "termsAndConditions2": null,
+      "termsAndConditionsLink": "",
+      "type": "Membership"
+    },
+    {
+      "code": "SELECTOUTLETS",
+      "description": "10% off selected outlet Courses",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- 10% off cap at $2.10 for all users with minimum spend of $5",
+      "termsAndConditions2": "- Applicable for users from Acacia RC, Aljunied CC, Anchorvale CC, AMK CC",
+      "termsAndConditionsLink": "",
+      "type": "Course"
+    },
+    {
+      "code": "TEST000",
+      "description": "Get $5 off for all products",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "<p>- Get $5 off all products across all outlets</p><p>- Minimum Spend of $10</p>",
+      "termsAndConditions2": null,
+      "termsAndConditionsLink": "",
+      "type": "Membership"
+    },
+    {
+      "code": "INTROKKK2",
+      "description": "10% off ",
+      "endDate": "2022-07-01T12:21:00",
+      "startDate": "2021-08-06T15:00:00",
+      "termsAndConditions1": "- 10% off cap at $2.10 for all users with minimum spend of $5",
+      "termsAndConditions2": "- Applicable for users from Acacia RC, Aljunied CC, Anchorvale CC, AMK CC",
+      "termsAndConditionsLink": "",
+      "type": "Event"
+    }
+
+  ]
+}

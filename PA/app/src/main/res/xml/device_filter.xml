@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Zebra scanner SE3307-->
+    <usb-device vendor-id="05e0" product-id="1900" />
+    <!--Custom printer-->
+    <usb-device vendor-id="0dd4" product-id="01a8" />
+    <!--Terminal-->
+    <!-- uat set -->
+    <!--<usb-device vendor-id="067b" product-id="2303" />-->
+    <!-- prod set -->
+    <usb-device vendor-id="0557" product-id="2008" />
+    <!--UPT1000F terminal-->
+    <usb-device vendor-id="0403" product-id="6001" />
+</resources>

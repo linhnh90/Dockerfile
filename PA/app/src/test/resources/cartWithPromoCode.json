@@ -1,0 +1,115 @@
+{
+  "bodyContent": {
+    "response": {
+      "Cart": {
+        "IsOtherUser": false,
+        "IsQuickBook": true,
+        "IsValidCart": true,
+        "billingInformation": {},
+        "declaration": {
+          "accepted": false
+        },
+        "expiry": "2022-08-11T16:45:37",
+        "items": [
+          {
+            "HighRiskChecked": false,
+            "IsHighRiskItem": false,
+            "IsOnlineClass": false,
+            "IsPrivateClass": false,
+            "MaxBookingAllowed": 10,
+            "MaxPrice": 80,
+            "MinPrice": 60,
+            "TicketGroups": [],
+            "availableVacancies": 13,
+            "booking": [
+              {
+                "EndDate": "Sat, Sep 10 2022",
+                "ErrorCode": 200,
+                "IsReservationSuccess": true,
+                "Participant": {
+                  "FullName": "CUSTOMER GFG",
+                  "IdNo": "T0076476G",
+                  "IdType": "1",
+                  "Nationality": "SG",
+                  "DateOfBirth": "2000-05-27",
+                  "Gender": "U",
+                  "Race": "99",
+                  "MobileNumber": "80000000",
+                  "UserId": "a09b8298-57a7-4e5c-937f-eafe0fc458e5",
+                  "RegisterOnline": "False",
+                  "IsSelf": "False",
+                  "CrmReservationDetails": "PACES.Foundation.CommerceConnect.Models.Course.ReservationDetails",
+                  "Reservation": "PACES.Foundation.CommerceConnect.Models.Reservation",
+                  "ParentalConsent": "False"
+                },
+                "Title": "$19 Chicken Rice in yr 2040 By Ms Square",
+                "date": "Sat, Sep 10 2022",
+                "price": {
+                  "discountTotal": "$0.00",
+                  "grandTotal": "$59.00",
+                  "promoDiscountAmount": "$1.00",
+                  "subTotal": "$60.00",
+                  "taxTotal": "$0.00"
+                },
+                "qty": 0,
+                "time": "10:00 AM-01:00 PM"
+              }
+            ],
+            "date": "Starts Sat, Sep 10 2022",
+            "endDate": "Sat, Sep 10 2022",
+            "isRegistrationOpen": true,
+            "isSkillsFutureCourse": false,
+            "itemId": "AngMoKioCC_Courses_C000005453",
+            "itemName": "AngMoKioCC_Courses_C000005453",
+            "itemType": 1,
+            "location": "Ang Mo Kio CC",
+            "name": "$19 Chicken Rice in yr 2040 By Ms Square",
+            "outlet": "Ang Mo Kio CC",
+            "outletId": "ang-mo-kio-cc",
+            "productCode": "C000005453",
+            "productType": "Course",
+            "qty": 1,
+            "time": "10:00 AM-01:00 PM",
+            "title": "$19 Chicken Rice in yr 2040 By Ms Square",
+            "total": {
+              "MemberPrice": {
+                "discountTotal": "$0.00",
+                "grandTotal": "$59.00",
+                "promoDiscountAmount": "$0.00",
+                "subTotal": "$60.00",
+                "taxTotal": "$0.00"
+              },
+              "NonMemberPrice": {
+                "discountTotal": "$0.00",
+                "grandTotal": "$0.00",
+                "promoDiscountAmount": "$0.00",
+                "subTotal": "$0.00",
+                "taxTotal": "$0.00"
+              },
+              "TotalPrice": 59
+            },
+            "totalVacancies": 20
+          }
+        ],
+        "promotion": {
+          "amount": "$1.00",
+          "description": "1$ off on all product verticals",
+          "promoCode": "passion1offgeneral"
+        },
+        "promotions": [],
+        "total": {
+          "discountTotal": "$0.00",
+          "grandTotal": "$59.00",
+          "promoDiscountAmount": "$1.00",
+          "subTotal": "$60.00",
+          "taxTotal": "$3.86"
+        }
+      },
+      "CartId": "Online-Quickbook-{dd1e0a77-89ec-454b-b358-78c6acc80d45}"
+    },
+    "responseStatusCode": 0,
+    "hasError": false,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

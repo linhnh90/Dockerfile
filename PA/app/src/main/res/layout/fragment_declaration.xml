@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="@dimen/width_dialog"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:background="@color/white_color"
+        android:paddingHorizontal="@dimen/dp_45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rl_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_45"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:text="@string/declaration"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_xxxlarge" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_for_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_facility_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    android:gravity="clip_vertical"
+                    android:button="@drawable/checkbox_declaration"
+                    android:text="@string/declaration_facility"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_for_ig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/cb_ig_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    android:gravity="clip_vertical"
+                    android:button="@drawable/checkbox_declaration"
+                    android:text="@string/declaration_ig_1"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/cb_ig_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    android:gravity="clip_vertical"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:button="@drawable/checkbox_declaration"
+                    android:text="@string/declaration_ig_2"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/ButtonRedSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:text="@string/ok"
+            android:layout_below="@id/ll_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_60" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_red"
+        android:layout_marginEnd="-25dp"
+        android:layout_alignEnd="@id/rl_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scv_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_first_terminal_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_log_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/log_on"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/reset"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Button
+                    android:id="@+id/btn_reset_sequence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/reset_sequence_number"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_second_terminal_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_first_terminal_setting"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_settlement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/settlement"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/ckb_nets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_10"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/nets"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/ckb_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_10"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/credit_card"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/ckb_ezl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_10"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/ez_link_card"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_third_terminal_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_second_terminal_setting"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_update_firmware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/check_for_update"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Button
+                    android:id="@+id/btn_last_txn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/last_transaction"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/lb_config_sof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terminal_sof_config"
+                android:textAllCaps="false"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_below="@id/ll_third_terminal_setting"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/opensans_regular"/>
+
+            <Button
+                android:id="@+id/btn_sof_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:textAllCaps="false"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/lb_config_sof"
+                android:text="@string/get_sof_list"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:textSize="22sp"
+                android:fontFamily="@font/opensans_regular"
+                android:paddingVertical="@dimen/dp_10"/>
+
+            <Button
+                android:id="@+id/btn_sof_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:textAllCaps="false"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/lb_config_sof"
+                android:layout_toEndOf="@+id/btn_sof_list"
+                android:text="@string/set_sof_priority"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:textSize="22sp"
+                android:fontFamily="@font/opensans_regular"
+                android:paddingVertical="@dimen/dp_10"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_sof_list"
+                android:layout_width="@dimen/dp_500"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@+id/btn_sof_priority"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/rectangle"
+                />
+
+            <TextView android:id="@+id/lb_config_terminal_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terminal_config_usb"
+                android:textAllCaps="false"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_below="@id/rcv_sof_list"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/opensans_regular"/>
+
+            <LinearLayout
+                android:id="@+id/ll_connect_terminal_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_below="@+id/lb_config_terminal_usb"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PID 1: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <EditText android:id="@+id/edt_pid_1"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="8"
+                    android:hint="Hex"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VID 1: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+
+                <EditText android:id="@+id/edt_vid_1"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:hint="Hex"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="8"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_connect_terminal_2"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_connect_terminal_1"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PID 2: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <EditText android:id="@+id/edt_pid_2"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:hint="Hex"
+                    android:maxLength="8"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VID 2: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <EditText android:id="@+id/edt_vid_2"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:hint="Hex"
+                    android:maxLength="8"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_connect_terminal_3"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_connect_terminal_2"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PID 3: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <EditText android:id="@+id/edt_pid_3"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:hint="Hex"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="8"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VID 3: "
+                    android:textAllCaps="false"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+                <EditText android:id="@+id/edt_vid_3"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:hint="Hex"
+                    android:digits="0123456789ABCDEF"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="8"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/opensans_regular"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_save_terminal_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/dp_10"
+                android:layout_below="@+id/ll_connect_terminal_3"
+                android:background="@drawable/bg_setting_radio_selector"
+                android:button="@null"
+                android:layout_marginStart="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/save_terminal_config"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_log_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/scv_panel"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/logs"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/btn_clear_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/setting_clear_button_height"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_red_radius"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:text="@string/clear_logs"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_clear_logs"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toEndOf="@id/scv_panel"
+        android:background="@drawable/rectangle"
+        android:paddingStart="@dimen/dp_20">
+
+        <TextView
+            android:id="@+id/txt_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_mini" />
+    </ScrollView>
+</RelativeLayout>

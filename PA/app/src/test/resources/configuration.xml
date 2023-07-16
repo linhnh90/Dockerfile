@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<configurations >
+    <information version="2.0.5">
+        <date-time>Fri 25/06/2021 15:39:29.20</date-time>
+        <path>ota_patch.zip</path>
+        <checksum>beaabb12b4ea659475a4b1009553f8417e514b143c0d297a3c74a90316bd26b4</checksum>
+        <Kiosk-ids>
+            <id></id>
+        </Kiosk-ids>
+    </information>
+    <firmwares>
+        <firmware type="application" version="3.0.1">
+            <path>PA-v3.0.1.apk</path>
+        </firmware>
+        <firmware type="system" version="Beluga_PA-G2_1.1.8.test">
+            <path>OTA_1.1.8.test.zip</path>
+        </firmware>
+        <firmware type="anti-virus" version="2.2.2">
+            <path>arm.zip</path>
+        </firmware>
+    </firmwares>
+</configurations>

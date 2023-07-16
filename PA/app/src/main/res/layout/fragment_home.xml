@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/tab_bottom_height"
+    android:orientation="vertical"
+    tools:context=".modules.home.view.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:background="@color/white_color"/>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_height"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">-->
+    <RelativeLayout
+        android:id="@+id/fl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_height"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/txt_maintenance_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/bg_blue"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp_15"
+            android:paddingVertical="@dimen/dp_5"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_only_passion_member"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/bg_passion_banner"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_header"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_recommendation_list"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_60"
+            android:paddingEnd="@dimen/dp_60" />
+
+        <LinearLayout
+            android:id="@+id/ll_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_50"
+            android:paddingEnd="@dimen/dp_60"
+            android:layout_marginTop="-25dp"
+            android:visibility="invisible">
+
+            <View
+                android:id="@+id/view_tmp_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_70"
+                android:layout_weight="1.5" />
+
+            <View
+                android:id="@+id/view_tmp_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/view_tmp_3"
+                android:layout_width="@dimen/dp_220"
+                android:layout_height="66dp"
+                android:layout_marginStart="@dimen/dp_50"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_170"
+            android:layout_below="@+id/rcv_recommendation_list"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/bg_home_search_panel"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp_50"
+            android:paddingEnd="@dimen/dp_60">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_150"
+                    android:background="@drawable/border_corner_red_trans"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_10"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_color_3"
+                    android:textSize="@dimen/text_size_small"
+                    tools:text="@string/view_all" />
+
+                <RadioGroup
+                    android:id="@+id/rb_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="@string/find_your_next_experience"
+                    android:textColor="@color/light_blue_color"
+                    android:textSize="@dimen/text_size_xhlarge" />
+
+                <RadioGroup
+                    android:id="@+id/rg_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="250dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_course"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_white_bg_trans_25"
+                        android:button="@null"
+                        android:checked="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:text="@string/courses"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RadioButton
+                        android:id="@+id/rb_facilities"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:text="@string/facilities"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RadioButton
+                        android:id="@+id/rb_event"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:text="@string/events"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_medium" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_find_courses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_70"
+                    android:layout_weight="1.5"
+                    android:autofillHints="@string/find_courses"
+                    android:backgroundTint="@color/light_blue_color"
+                    android:drawableStart="@drawable/ic_course"
+                    android:drawablePadding="@dimen/dp_20"
+                    android:fontFamily="@font/opensans_light"
+                    android:hint="@string/search_course_home_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:textColor="@color/light_blue_color"
+                    android:textColorHint="@color/light_blue_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.styl.pa.customViews.UpOnlyAutoCompleteTextView
+                    android:id="@+id/actFindLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/find_location"
+                    android:backgroundTint="@color/light_blue_color"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawablePadding="@dimen/dp_30"
+                    android:dropDownAnchor="@id/view_tmp_2"
+                    android:dropDownHeight="@dimen/dp_300"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/opensans_light"
+                    android:hint="@string/search_location_home_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:textColor="@color/light_blue_color"
+                    android:textColorHint="@color/light_blue_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/btn_search"
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="@dimen/dp_50"
+                    android:background="@drawable/border_corner_white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:text="@string/search_btn"
+                    android:textColor="@color/red_color_3"
+                    android:textSize="@dimen/text_size_xxlarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--</LinearLayout>
+</ScrollView>-->
+</RelativeLayout>

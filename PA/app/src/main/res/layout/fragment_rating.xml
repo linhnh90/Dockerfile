@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    tools:context=".modules.rating.view.RatingFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_grey_gradient_top"/>
+    
+    <TextView
+        android:id="@+id/txt_rating_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_190"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/rating_label"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_xxhlarge" />
+
+    <RadioGroup
+        android:id="@+id/rg_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_rating_label"
+        android:layout_marginTop="@dimen/dp_70"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_very_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_very_poor"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/very_poor"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioButton
+            android:id="@+id/rb_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_poor"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/poor"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioButton
+            android:id="@+id/rb_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_average"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/average"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioButton
+            android:id="@+id/rb_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_good"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/good"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioButton
+            android:id="@+id/rb_excellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_excellent"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/excellent"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_large" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/img_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_rating_label"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/thankfulness_margin_top"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:paddingBottom="@dimen/dp_60"
+        android:visibility="gone" />
+
+</RelativeLayout>

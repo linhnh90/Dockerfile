@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_log_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="@dimen/dp_10"
+    android:paddingVertical="@dimen/dp_2">
+
+    <TextView
+        android:id="@+id/txt_txn_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_customer_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1.5"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_customer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_cart_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1.5"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_payment_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_created_at"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txt_completed_at"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1"
+        android:textColor="@color/black_color_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <CheckBox
+        android:id="@+id/cb_selected_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/black_color_2"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:text="@null"
+        android:clickable="false"
+        />
+
+</LinearLayout>

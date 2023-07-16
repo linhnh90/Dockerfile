@@ -1,0 +1,23 @@
+{
+  "bodyContent": {
+    "response": {
+      "CartId": "Online-54f12358-388f-4374-8681-d977db5fbc2d",
+      "ErrorValidation": {
+        "Action": [
+          {
+            "Data": "Ok",
+            "IsRedirect": false
+          }
+        ],
+        "ErrorCode": "3109",
+        "Heading": "Attention",
+        "Message": "You have utilised this promo code before, please input another promo code to continue.",
+        "Popup": true
+      }
+    },
+    "responseStatusCode": 200,
+    "hasError": true,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

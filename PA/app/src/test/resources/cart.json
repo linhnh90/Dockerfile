@@ -1,0 +1,85 @@
+{
+  "bodyContent": {
+    "response": {
+      "cart": {
+        "IsOtherUser": false,
+        "IsQuickBook": true,
+        "IsValidCart": true,
+        "billingInformation": {},
+        "declaration": {
+          "accepted": false
+        },
+        "expiry": "2021-09-01T14:33:05",
+        "items": [
+          {
+            "HighRiskChecked": false,
+            "IsHighRiskItem": false,
+            "IsOnlineClass": false,
+            "IsPrivateClass": false,
+            "MaxBookingAllowed": 0,
+            "MaxPrice": 0,
+            "MinPrice": 0,
+            "TicketGroups": [],
+            "availableVacancies": 0,
+            "booking": [
+              {
+                "ErrorCode": 200,
+                "FacilityName": "BADMINTON COURT 2",
+                "IsReservationSuccess": true,
+                "Participant": {
+                  "fullName": null
+                },
+                "date": "01 Sep 2021",
+                "price": {
+                  "discountTotal": "$0.00",
+                  "grandTotal": "$8.00",
+                  "subTotal": "$8.00",
+                  "taxTotal": "$0.00"
+                },
+                "qty": 1,
+                "time": "08:30 PM - 09:30 PM"
+              }
+            ],
+            "isRegistrationOpen": false,
+            "isSkillsFutureCourse": false,
+            "itemName": "BADMINTON COURT",
+            "itemType": 0,
+            "location": "CHONG PANG CC",
+            "name": "BADMINTON COURT",
+            "outlet": "CHONG PANG CC",
+            "productCode": "AceThePlaceCC_TABLETENNISROOMTT2",
+            "productType": "Facility",
+            "qty": 0,
+            "total": {
+              "MemberPrice": {
+                "discountTotal": "$0.00",
+                "grandTotal": "$8.00",
+                "subTotal": "$8.00",
+                "taxTotal": "$0.00"
+              },
+              "NonMemberPrice": {
+                "discountTotal": "$0.00",
+                "grandTotal": "$0.00",
+                "subTotal": "$0.00",
+                "taxTotal": "$0.00"
+              },
+              "TotalPrice": 8
+            },
+            "totalVacancies": 0
+          }
+        ],
+        "total": {
+          "discountTotal": "$0.00",
+          "grandTotal": "$8.00",
+          "subTotal": "$8.00",
+          "taxTotal": "$0.52"
+        }
+      },
+      "cartId": "Online-Quickbook-{03324ea8-0ae2-4cf3-a027-d22ebbe6477f}"
+    },
+    "responseStatusCode": 0,
+    "hasError": false,
+    "errorMessages": ""
+  },
+  "responseStatusCode": 200
+}

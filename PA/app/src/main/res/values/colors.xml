@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#3f3f3f</color>
+    <color name="purple_color">#7a005f</color>
+    <color name="dark_grey_color">#939393</color>
+    <color name="light_grey_color">#cacaca</color>
+    <color name="blue_color">#407589</color>
+    <color name="light_blue_color">#cffbff</color>
+    <color name="red_color">#ee1d24</color>
+    <color name="yellow_color">#fcdc23</color>
+    <color name="green_color">#48a264</color>
+    <color name="dark_blue_color">#035771</color>
+    <color name="light_blue2_color">#AAF8FF</color>
+    <color name="color_bg_message">#e5000000</color>
+    <color name="color_pinkish_red">#ed1b24</color>
+
+    <color name="opacity_black_color">#be000000</color>
+    <color name="opacity_purple_color">#107a005f</color>
+    <color name="red_color_2">#c60d0d</color>
+
+    <color name="blue_color_2">#0b6a84</color>
+    <color name="black_color_2">#DA000000</color>
+    <color name="yellow_color_2">#FFDB23</color>
+    <color name="dark_blue_color_2">#031C4A</color>
+    
+    <color name="red_color_3">#d0343a</color>
+    <color name="gray_color">#343434</color>
+    <color name="gray_color_1">#727272</color>
+    <color name="bright_gray">#D8D8D8</color>
+    <color name="light_bright_gray">#F2F2F2</color>
+    <color name="orange_color">#FF8000</color>
+    <color name="light_orange">#f8981d</color>
+    <color name="black_color_3">#9a9a9a</color>
+    <color name="black_color_4">#0d0d0d</color>
+    <color name="green_color_1">#059d35</color>
+    <color name="green_color_2">#e0f0da</color>
+    <color name="green_color_3">#34bc44</color>
+    <color name="green_color_4">#30c923</color>
+    <color name="red_color_4">#f0dfda</color>
+    <color name="blue_color_3">#398daa</color>
+    <color name="orange_color_1">#ff9642</color>
+    <color name="purple_color_1">#9855b1</color>
+    <color name="grey">#eeeeee</color>
+</resources>

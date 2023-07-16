@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clickable="true"
+    tools:context=".modules.promo.view.PromoCodeTnCFragment">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_dialog_promo_code"
+        android:layout_height="@dimen/height_dialog_promo_code"
+        android:background="@color/white_color"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingVertical="@dimen/dp_20">
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/ButtonRedSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:fontFamily="@font/opensans_bold"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:paddingVertical="@dimen/dp_5"
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color" />
+
+        <WebView
+            android:id="@+id/wv_tnc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_close"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10" />
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_close"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+        </View>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_close"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray_color_1"
+            android:indeterminateTintMode="src_atop" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

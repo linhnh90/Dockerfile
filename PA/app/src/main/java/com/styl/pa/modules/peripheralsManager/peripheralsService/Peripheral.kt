@@ -1,0 +1,60 @@
+package com.styl.pa.modules.peripheralsManager.peripheralsService
+
+/**
+ * Created by NgaTran on 9/15/2020.
+ */
+object Peripheral {
+    val CUSTOM_PRINTER_MAX_CHARACTERS = 40
+    val TX80_PRINTER_MAX_CHARACTERS = 45
+
+    val CUSTOM_PRINTER_PAPER_WIDTH = 500
+    val TX80_PRINTER_PAPER_WIDTH = 550
+
+    //type
+    val SCANNER_TYPE = 1000
+    val PRINTER_TYPE = 2000
+    val TERMINAL_TYPE = 3000
+
+    //zebra scanner
+    val SCANNER_ZEBRA_VID = 1504
+    val SCANNER_ZEBRA_PID = 6400
+    val SCANNER_ZEBRA_MANUFACTURER_NAME = "Symbol"
+    val SCANNER_ZEBRA_PRODUCT_NAME = "Symbol Bar Code Scanner"
+
+    //zebra scanner
+    val SCANNER_CH34_VID = 6790
+    val SCANNER_CH34_PID = 29987
+    val SCANNER_CH34_MANUFACTURER_NAME = null
+    val SCANNER_CH34_PRODUCT_NAME = "USB2.0-Serial"
+
+    //custom printer
+    val PRINTER_CUSTOM_VID = 3540
+    val PRINTER_CUSTOM_PID_1 = 580
+    val PRINTER_CUSTOM_PID_2 = 424
+    val PRINTER_CUSTOM_MANUFACTURER_NAME = "Custom"
+    val PRINTER_CUSTOM_PRODUCT_NAME = "TG2480-H"
+
+    //TX80 printer
+    val PRINTER_TX80_VID = 10473
+    val PRINTER_TX80_PID = 22546
+    val PRINTER_TX80_MANUFACTURER_NAME = "Gigadevice"
+    val PRINTER_TX80_PRODUCT_NAME = "TX80 Printer"
+
+    //FTDI terminal
+//    val TERMINAL_FTDI_VID = 1659
+//    val TERMINAL_FTDI_PID = 8963
+//    val TERMINAL_FTDI_MANUFACTURER_NAME = "FTDI"
+//    val TERMINAL_FTDI_PRODUCT_NAME = "USB Serial Converter"
+
+    //UPT1000F terminal
+    val TERMINAL_UPT1000F_VID = 1367
+    val TERMINAL_UPT1000F_PID = 8200
+    val TERMINAL_UPT1000F_MANUFACTURER_NAME = "FTDI"
+    val TERMINAL_UPT1000F_PRODUCT_NAME = "USB Serial Converter"
+
+    //FT232R terminal
+    val TERMINAL_FT232R_VID = 1367
+    val TERMINAL_FT232R_PID = 8200
+    val TERMINAL_FT232R_MANUFACTURER_NAME = "FTDI"
+    val TERMINAL_FT232R_PRODUCT_NAME = "FT232R USB UART"
+}
